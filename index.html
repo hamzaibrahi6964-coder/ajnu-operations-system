@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="AJNU Ventures Environmental Service Ltd. Staff Operations Portal"
+    >
+
+    <title>Staff Portal | AJNU Operations</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Styles -->
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/auth.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="auth-page">
+
+        <!-- =============================================
+             BRAND SIDE
+             ============================================= -->
+
+        <section class="auth-brand">
+
+            <div class="auth-brand-content">
+
+                <img
+                    src="ajnu.PNG"
+                    alt="AJNU Ventures Environmental Service Ltd."
+                    class="auth-logo"
+                >
+
+                <div class="auth-brand-label">
+                    Operations Management System
+                </div>
+
+                <h1>
+                    One connected
+                    <span>workspace</span>
+                    for every operation.
+                </h1>
+
+                <p class="auth-brand-description">
+                    Manage environmental service operations,
+                    branches, contracts, teams, fleet and
+                    resources from one organized workspace.
+                </p>
+
+            </div>
+
+
+            <div class="auth-brand-footer">
+
+                AJNU Ventures Environmental Service Ltd.
+                <br>
+                Authorized personnel only.
+
+            </div>
+
+        </section>
+
+
+        <!-- =============================================
+             LOGIN SIDE
+             ============================================= -->
+
+        <section class="auth-panel">
+
+            <div class="auth-card">
+
+                <div class="auth-heading">
+
+                    <div class="eyebrow">
+                        Staff Portal
+                    </div>
+
+                    <h2>
+                        Welcome back
+                    </h2>
+
+                    <p>
+                        Sign in to access your AJNU
+                        operations workspace.
+                    </p>
+
+                </div>
+
+
+                <!-- Error message -->
+
+                <div
+                    class="auth-error"
+                    id="authError"
+                >
+                    Invalid login details. Please check
+                    your credentials and try again.
+                </div>
+
+
+                <!-- Login form -->
+
+                <form
+                    class="auth-form"
+                    id="staffLoginForm"
+                >
+
+                    <!-- Employee ID -->
+
+                    <div class="form-group">
+
+                        <label for="employeeId">
+                            Employee ID or Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="text"
+                                id="employeeId"
+                                name="employeeId"
+                                placeholder="Enter your employee ID or email"
+                                autocomplete="username"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                id="passwordToggle"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Options -->
+
+                    <div class="auth-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+
+                        <a
+                            href="#"
+                            class="forgot-password"
+                            onclick="return false;"
+                        >
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        Sign In
+                    </button>
+
+                </form>
+
+
+                <!-- Security -->
+
+                <div class="auth-security">
+
+                    <span class="auth-security-icon">
+                        🔒
+                    </span>
+
+                    <span>
+                        Secure access for authorized
+                        AJNU personnel
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =============================================
+         DEMO LOGIN SCRIPT
+         ============================================= -->
+
+    <script>
+
+        const loginForm =
+            document.getElementById("staffLoginForm");
+
+        const passwordInput =
+            document.getElementById("password");
+
+        const passwordToggle =
+            document.getElementById("passwordToggle");
+
+        const authError =
+            document.getElementById("authError");
+
+
+        /* =============================================
+           PASSWORD VISIBILITY
+           ============================================= */
+
+        passwordToggle.addEventListener(
+            "click",
+            () => {
+
+                const isPassword =
+                    passwordInput.type === "password";
+
+                passwordInput.type =
+                    isPassword
+                        ? "text"
+                        : "password";
+
+                passwordToggle.textContent =
+                    isPassword
+                        ? "Hide"
+                        : "Show";
+
+            }
+        );
+
+
+        /* =============================================
+           DEMO LOGIN
+           ============================================= */
+
+        loginForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+                const employeeId =
+                    document
+                        .getElementById("employeeId")
+                        .value
+                        .trim();
+
+                const password =
+                    passwordInput.value.trim();
+
+
+                /*
+                 * DEMO ONLY
+                 *
+                 * This is not real authentication.
+                 * Production authentication will use
+                 * a secure backend.
+                 */
+
+                if (
+                    employeeId === "manager@ajnu.demo" &&
+                    password === "123456"
+                ) {
+
+                    window.location.href =
+                        "dashboard.html";
+
+                    return;
+                }
+
+
+                authError.classList.add("show");
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>
