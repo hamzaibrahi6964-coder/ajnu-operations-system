@@ -1,92 +1,67 @@
 /* =========================================================
    AJNU OPERATIONS SYSTEM
-   Global Design Variables
+   PREMIUM DESIGN SYSTEM
    ========================================================= */
 
 :root {
 
-    /* ==============================
-       BRAND COLORS
-       ============================== */
+    /* BRAND */
+    --ajnu-950: #03261A;
+    --ajnu-900: #043522;
+    --ajnu-800: #06462D;
+    --ajnu-700: #075A39;
+    --ajnu-600: #087047;
+    --ajnu-500: #0B8955;
 
-    --ajnu-green-900: #063C28;
-    --ajnu-green-800: #075333;
-    --ajnu-green-700: #0B5D3B;
-    --ajnu-green-600: #117A4B;
-    --ajnu-green-500: #17965B;
+    --ajnu-lime: #B6D957;
+    --ajnu-lime-soft: #D9EAA0;
 
-    --ajnu-lime: #A7D63B;
-    --ajnu-lime-light: #C8E879;
+    /* BACKGROUNDS */
+    --bg-main: #F4F7F5;
+    --bg-white: #FFFFFF;
+    --bg-soft: #F8FAF9;
 
-    /* ==============================
-       BACKGROUNDS
-       ============================== */
-
-    --bg-main: #F5F8F6;
-    --bg-card: #FFFFFF;
-    --bg-soft: #EEF7F1;
-    --bg-dark: #062F22;
-
-    /* ==============================
-       TEXT
-       ============================== */
-
-    --text-primary: #17231D;
-    --text-secondary: #53635A;
-    --text-muted: #819087;
+    /* TEXT */
+    --text-primary: #14231C;
+    --text-secondary: #52635A;
+    --text-muted: #89958E;
     --text-white: #FFFFFF;
 
-    /* ==============================
-       BORDERS
-       ============================== */
+    /* BORDERS */
+    --border: #E3EAE6;
+    --border-dark: #CCD8D1;
 
-    --border-light: #E1E9E4;
-    --border-medium: #CBD8D0;
+    /* STATUS */
+    --success: #168A54;
+    --warning: #D79A25;
+    --danger: #D94C4C;
+    --info: #3B82C4;
 
-    /* ==============================
-       STATUS COLORS
-       ============================== */
-
-    --success: #16834C;
-    --warning: #D89A16;
-    --danger: #D64545;
-    --info: #2677C8;
-
-    /* ==============================
-       TYPOGRAPHY
-       ============================== */
-
+    /* TYPOGRAPHY */
     --font-main: "Inter", "Segoe UI", Arial, sans-serif;
 
-    /* ==============================
-       RADIUS
-       ============================== */
-
-    --radius-sm: 8px;
+    /* RADIUS */
+    --radius-xs: 6px;
+    --radius-sm: 9px;
     --radius-md: 12px;
     --radius-lg: 18px;
-    --radius-xl: 24px;
+    --radius-xl: 26px;
 
-    /* ==============================
-       SHADOWS
-       ============================== */
+    /* SHADOWS */
+    --shadow-sm:
+        0 4px 14px rgba(3, 38, 26, 0.05);
 
-    --shadow-sm: 0 2px 8px rgba(6, 60, 40, 0.06);
-    --shadow-md: 0 8px 25px rgba(6, 60, 40, 0.09);
-    --shadow-lg: 0 20px 50px rgba(6, 60, 40, 0.13);
+    --shadow-md:
+        0 12px 35px rgba(3, 38, 26, 0.08);
 
-    /* ==============================
-       TRANSITIONS
-       ============================== */
+    --shadow-lg:
+        0 25px 70px rgba(3, 38, 26, 0.13);
 
-    --transition-fast: 0.2s ease;
-    --transition-normal: 0.3s ease;
+    /* TRANSITIONS */
+    --transition-fast: 180ms ease;
+    --transition: 280ms cubic-bezier(.2,.8,.2,1);
 
-    /* ==============================
-       LAYOUT
-       ============================== */
-
-    --sidebar-width: 260px;
+    /* LAYOUT */
+    --sidebar-width: 264px;
     --navbar-height: 72px;
-
 }
