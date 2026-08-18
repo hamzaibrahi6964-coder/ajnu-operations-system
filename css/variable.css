@@ -1,0 +1,92 @@
+/* =========================================================
+   AJNU OPERATIONS SYSTEM
+   Global Design Variables
+   ========================================================= */
+
+:root {
+
+    /* ==============================
+       BRAND COLORS
+       ============================== */
+
+    --ajnu-green-900: #063C28;
+    --ajnu-green-800: #075333;
+    --ajnu-green-700: #0B5D3B;
+    --ajnu-green-600: #117A4B;
+    --ajnu-green-500: #17965B;
+
+    --ajnu-lime: #A7D63B;
+    --ajnu-lime-light: #C8E879;
+
+    /* ==============================
+       BACKGROUNDS
+       ============================== */
+
+    --bg-main: #F5F8F6;
+    --bg-card: #FFFFFF;
+    --bg-soft: #EEF7F1;
+    --bg-dark: #062F22;
+
+    /* ==============================
+       TEXT
+       ============================== */
+
+    --text-primary: #17231D;
+    --text-secondary: #53635A;
+    --text-muted: #819087;
+    --text-white: #FFFFFF;
+
+    /* ==============================
+       BORDERS
+       ============================== */
+
+    --border-light: #E1E9E4;
+    --border-medium: #CBD8D0;
+
+    /* ==============================
+       STATUS COLORS
+       ============================== */
+
+    --success: #16834C;
+    --warning: #D89A16;
+    --danger: #D64545;
+    --info: #2677C8;
+
+    /* ==============================
+       TYPOGRAPHY
+       ============================== */
+
+    --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+
+    /* ==============================
+       RADIUS
+       ============================== */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    /* ==============================
+       SHADOWS
+       ============================== */
+
+    --shadow-sm: 0 2px 8px rgba(6, 60, 40, 0.06);
+    --shadow-md: 0 8px 25px rgba(6, 60, 40, 0.09);
+    --shadow-lg: 0 20px 50px rgba(6, 60, 40, 0.13);
+
+    /* ==============================
+       TRANSITIONS
+       ============================== */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+    /* ==============================
+       LAYOUT
+       ============================== */
+
+    --sidebar-width: 260px;
+    --navbar-height: 72px;
+
+}
