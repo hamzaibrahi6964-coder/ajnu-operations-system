@@ -1,1 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard | AJNU Operations
+    </title>
+
+
+    <!-- Google Font -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Styles -->
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-layout">
+
+
+        <!-- =========================================
+             SIDEBAR
+             ========================================= -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <!-- Brand -->
+
+            <div class="sidebar-brand">
+
+                <div class="sidebar-logo">
+
+                    <img
+                        src="ajnu.PNG"
+                        alt="AJNU Ventures"
+                    >
+
+                </div>
+
+
+                <div class="brand-text">
+
+                    <strong>
+                        AJNU
+                    </strong>
+
+                    <span>
+                        OPERATIONS
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Navigation -->
+
+            <nav class="sidebar-nav">
+
+
+                <a
+                    href="#"
+                    class="nav-item active"
+                >
+
+                    <span class="nav-icon">
+                        ⊞
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ◉
+                    </span>
+
+                    <span>
+                        Operations
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ◫
+                    </span>
+
+                    <span>
+                        Branches
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ▣
+                    </span>
+
+                    <span>
+                        Contracts
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        🚛
+                    </span>
+
+                    <span>
+                        Fleet
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ♙
+                    </span>
+
+                    <span>
+                        Workforce
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ₦
+                    </span>
+
+                    <span>
+                        Finance
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ▤
+                    </span>
+
+                    <span>
+                        Reports
+                    </span>
+
+                </a>
+
+
+            </nav>
+
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+
+                <div class="sidebar-divider"></div>
+
+
+                <button
+                    class="support-button"
+                >
+
+                    <span>
+                        ?
+                    </span>
+
+                    Help & Support
+
+                </button>
+
+
+                <div class="sidebar-user">
+
+
+                    <div class="user-avatar">
+                        MA
+                    </div>
+
+
+                    <div class="user-info">
+
+                        <strong>
+                            Musa Ahmed
+                        </strong>
+
+                        <span>
+                            Branch Manager
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="user-more"
+                    >
+                        ⋮
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =========================================
+             MAIN CONTENT
+             ========================================= -->
+
+        <main class="main-content">
+
+
+            <!-- TOPBAR -->
+
+            <header class="topbar">
+
+
+                <button
+                    class="mobile-menu"
+                    id="mobileMenu"
+                >
+                    ☰
+                </button>
+
+
+                <div class="topbar-left">
+
+                    <div class="page-context">
+
+                        <span>
+                            Operations Management
+                        </span>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="topbar-right">
+
+
+                    <!-- Branch Selector -->
+
+                    <button
+                        class="branch-selector"
+                    >
+
+                        <span class="branch-indicator"></span>
+
+                        <div>
+
+                            <small>
+                                CURRENT BRANCH
+                            </small>
+
+                            <strong>
+                                Kaduna Headquarters
+                            </strong>
+
+                        </div>
+
+                        <span class="branch-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- Notification -->
+
+                    <button
+                        class="notification-button"
+                    >
+
+                        🔔
+
+                        <span class="notification-dot"></span>
+
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- DASHBOARD -->
+
+            <section class="dashboard-content">
+
+
+                <!-- Welcome -->
+
+                <div class="welcome-section">
+
+
+                    <div>
+
+                        <span class="dashboard-eyebrow">
+                            WEDNESDAY, AUGUST 19
+                        </span>
+
+
+                        <h2>
+                            Good evening, Musa 👋
+                        </h2>
+
+
+                        <p>
+                            Here's what's happening across
+                            Kaduna Headquarters today.
+                        </p>
+
+                    </div>
+
+
+                    <button class="primary-action">
+
+                        <span>
+                            +
+                        </span>
+
+                        New Operation
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =====================================
+                     STATS
+                     ===================================== -->
+
+                <section class="stats-grid">
+
+
+                    <!-- Active Operations -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon green">
+                            ◉
+                        </div>
+
+
+                        <div class="stat-content">
+
+                            <span>
+                                ACTIVE OPERATIONS
+                            </span>
+
+                            <strong>
+                                24
+                            </strong>
+
+                            <small class="positive">
+                                ↑ 12% from yesterday
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Fleet -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon blue">
+                            🚛
+                        </div>
+
+
+                        <div class="stat-content">
+
+                            <span>
+                                VEHICLES ACTIVE
+                            </span>
+
+                            <strong>
+                                18
+                            </strong>
+
+                            <small>
+                                of 22 total vehicles
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Staff -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ♙
+                        </div>
+
+
+                        <div class="stat-content">
+
+                            <span>
+                                STAFF ON DUTY
+                            </span>
+
+                            <strong>
+                                67
+                            </strong>
+
+                            <small>
+                                8 currently off duty
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Revenue -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon purple">
+                            ₦
+                        </div>
+
+
+                        <div class="stat-content">
+
+                            <span>
+                                TODAY'S COLLECTION
+                            </span>
+
+                            <strong>
+                                ₦2.4M
+                            </strong>
+
+                            <small class="positive">
+                                ↑ 8.4% this week
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =====================================
+                     DASHBOARD GRID
+                     ===================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- Operations Overview -->
+
+                    <article class="dashboard-card operations-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    LIVE OPERATIONS
+                                </span>
+
+                                <h3>
+                                    Operations Overview
+                                </h3>
+
+                            </div>
+
+
+                            <button class="card-action">
+                                View all →
+                            </button>
+
+                        </div>
+
+
+
+                        <div class="operation-list">
+
+
+                            <div class="operation-item">
+
+                                <div class="operation-status active-status">
+                                    ●
+                                </div>
+
+
+                                <div class="operation-info">
+
+                                    <strong>
+                                        Kaduna Central Waste Collection
+                                    </strong>
+
+                                    <span>
+                                        Team A • 3 Vehicles
+                                    </span>
+
+                                </div>
+
+
+                                <div class="operation-progress">
+
+                                    <span>
+                                        78%
+                                    </span>
+
+                                    <div class="progress-bar">
+
+                                        <div
+                                            class="progress-fill"
+                                            style="width: 78%;"
+                                        ></div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="operation-item">
+
+                                <div class="operation-status active-status">
+                                    ●
+                                </div>
+
+
+                                <div class="operation-info">
+
+                                    <strong>
+                                        State Secretariat Cleaning
+                                    </strong>
+
+                                    <span>
+                                        Team C • 2 Vehicles
+                                    </span>
+
+                                </div>
+
+
+                                <div class="operation-progress">
+
+                                    <span>
+                                        54%
+                                    </span>
+
+                                    <div class="progress-bar">
+
+                                        <div
+                                            class="progress-fill"
+                                            style="width: 54%;"
+                                        ></div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div class="operation-item">
+
+                                <div class="operation-status pending-status">
+                                    ●
+                                </div>
+
+
+                                <div class="operation-info">
+
+                                    <strong>
+                                        Drainage Maintenance Project
+                                    </strong>
+
+                                    <span>
+                                        Team B • Scheduled
+                                    </span>
+
+                                </div>
+
+
+                                <div class="operation-progress">
+
+                                    <span>
+                                        20%
+                                    </span>
+
+                                    <div class="progress-bar">
+
+                                        <div
+                                            class="progress-fill warning"
+                                            style="width: 20%;"
+                                        ></div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Attention Required -->
+
+                    <article class="dashboard-card alerts-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    ATTENTION REQUIRED
+                                </span>
+
+                                <h3>
+                                    Alerts
+                                </h3>
+
+                            </div>
+
+
+                            <span class="alert-count">
+                                3
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="alert-list">
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon warning-icon">
+                                    !
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Vehicle Maintenance Due
+                                    </strong>
+
+                                    <span>
+                                        AJN-204 requires inspection
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon danger-icon">
+                                    !
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Operation Delayed
+                                    </strong>
+
+                                    <span>
+                                        Unguwan Rimi collection route
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="alert-item">
+
+                                <div class="alert-icon info-icon">
+                                    i
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Contract Update
+                                    </strong>
+
+                                    <span>
+                                        Kaduna State renewal pending
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =====================================
+                     RECENT ACTIVITY
+                     ===================================== -->
+
+                <section class="dashboard-card activity-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                LATEST UPDATES
+                            </span>
+
+                            <h3>
+                                Recent Activity
+                            </h3>
+
+                        </div>
+
+
+                        <button class="card-action">
+                            View history →
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="activity-list">
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-marker completed">
+                                ✓
+                            </div>
+
+
+                            <div class="activity-details">
+
+                                <strong>
+                                    Waste collection completed
+                                </strong>
+
+                                <span>
+                                    Kaduna Central • Team A
+                                </span>
+
+                            </div>
+
+
+                            <time>
+                                12 min ago
+                            </time>
+
+                        </div>
+
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-marker dispatched">
+                                →
+                            </div>
+
+
+                            <div class="activity-details">
+
+                                <strong>
+                                    Vehicle AJN-118 dispatched
+                                </strong>
+
+                                <span>
+                                    Assigned to State Secretariat operation
+                                </span>
+
+                            </div>
+
+
+                            <time>
+                                35 min ago
+                            </time>
+
+                        </div>
+
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-marker finance">
+                                ₦
+                            </div>
+
+
+                            <div class="activity-details">
+
+                                <strong>
+                                    Payment recorded
+                                </strong>
+
+                                <span>
+                                    Contract payment received
+                                </span>
+
+                            </div>
+
+
+                            <time>
+                                1 hr ago
+                            </time>
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- Scripts -->
+
+    <script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>
