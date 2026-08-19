@@ -1,1 +1,437 @@
+/* =========================================================
+   AJNU OPERATIONS MANAGEMENT SYSTEM
+   BRANCHES PAGE
+========================================================= */
 
+
+/* =========================================================
+   BRANCH GRID
+========================================================= */
+
+.branches-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   BRANCH CARD
+========================================================= */
+
+.branch-card {
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    padding: 22px;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.branch-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #dce5df;
+
+    box-shadow:
+        0 16px 35px rgba(19, 45, 32, 0.08);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.branch-card-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 20px;
+
+    border-bottom:
+        1px solid #edf1ee;
+}
+
+
+.branch-location {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.branch-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    background: #e8f5ee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+
+    flex-shrink: 0;
+}
+
+
+.branch-location span,
+.branch-manager span,
+.branch-details span,
+.performance-header span {
+    display: block;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.09em;
+
+    color: #8a9991;
+}
+
+
+.branch-location h3 {
+    margin-top: 5px;
+
+    font-size: 16px;
+
+    color: #17231d;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   BRANCH STATUS
+========================================================= */
+
+.branch-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.branch-status.active {
+    color: #23764c;
+
+    background: #e7f6ed;
+}
+
+
+.branch-status.attention {
+    color: #b84d45;
+
+    background: #fff0ef;
+}
+
+
+/* =========================================================
+   BRANCH MANAGER
+========================================================= */
+
+.branch-manager {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 20px 0;
+}
+
+
+.manager-avatar {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #d8b56a;
+
+    color: #17231d;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+
+.manager-avatar.blue-avatar {
+    background: #dceafa;
+
+    color: #3974ba;
+}
+
+
+.manager-avatar.purple-avatar {
+    background: #eee7f8;
+
+    color: #7859a6;
+}
+
+
+.manager-avatar.orange-avatar {
+    background: #fff0dc;
+
+    color: #d88a28;
+}
+
+
+.manager-avatar.red-avatar {
+    background: #fde8e6;
+
+    color: #c84e49;
+}
+
+
+.branch-manager strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #26352d;
+}
+
+
+/* =========================================================
+   BRANCH DETAILS
+========================================================= */
+
+.branch-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+
+    padding: 16px;
+
+    background: #f8faf9;
+
+    border: 1px solid #edf1ef;
+
+    border-radius: 12px;
+}
+
+
+.branch-details strong {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: #344139;
+}
+
+
+/* =========================================================
+   BRANCH PERFORMANCE
+========================================================= */
+
+.branch-performance {
+    padding: 20px 0;
+}
+
+
+.performance-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.performance-header strong {
+    font-size: 12px;
+
+    color: #26352d;
+}
+
+
+.branch-performance .progress-bar {
+    height: 7px;
+
+    background: #edf1ef;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.branch-performance .progress-fill {
+    height: 100%;
+
+    background: #1d8b5b;
+
+    border-radius: inherit;
+}
+
+
+.branch-performance .progress-fill.warning {
+    background: #d88a28;
+}
+
+
+.branch-performance .progress-fill.danger {
+    background: #c84e49;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.branch-card-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid #edf1ee;
+}
+
+
+.branch-card-footer > span {
+    font-size: 11px;
+
+    color: #7d8c84;
+}
+
+
+.view-branch-button {
+    border: none;
+
+    background: transparent;
+
+    color: #17603f;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+
+.view-branch-button:hover {
+    color: #0f472f;
+
+    transform: translateX(2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1250px) {
+
+    .branches-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .branches-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .branch-card {
+        padding: 18px;
+    }
+
+
+    .branch-card-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .branch-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .branch-card-footer {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
