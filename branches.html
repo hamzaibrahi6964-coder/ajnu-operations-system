@@ -1,1 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Branches | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/branches.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item">
+
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="branches.html"
+               class="nav-item active">
+
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>COMPANY STRUCTURE</span>
+
+                    <h1>Branches</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>CURRENT BRANCH</small>
+
+                        <strong>Kaduna Headquarters</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">▾</span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        MULTI-BRANCH MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Company Branches
+                    </h2>
+
+                    <p>
+                        Monitor branch operations, workforce and performance from one central platform.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="addBranchButton">
+
+                    <span>+</span>
+
+                    Add Branch
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= BRANCH SUMMARY ================= -->
+
+            <section class="stats-grid">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        🏢
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL BRANCHES</span>
+
+                        <strong>5</strong>
+
+                        <small>
+                            Across 4 states
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ACTIVE BRANCHES</span>
+
+                        <strong>5</strong>
+
+                        <small class="positive">
+                            All branches operational
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ♙
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL WORKFORCE</span>
+
+                        <strong>248</strong>
+
+                        <small>
+                            Across all branches
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        !
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>NEEDS ATTENTION</span>
+
+                        <strong>2</strong>
+
+                        <small>
+                            Branch performance alerts
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= BRANCH GRID ================= -->
+
+            <section class="branches-grid">
+
+
+                <!-- KADUNA -->
+
+                <article class="branch-card"
+                         data-branch="Kaduna Headquarters">
+
+                    <div class="branch-card-header">
+
+                        <div class="branch-location">
+
+                            <div class="branch-icon">
+                                🏢
+                            </div>
+
+                            <div>
+
+                                <span>HEADQUARTERS</span>
+
+                                <h3>
+                                    Kaduna Headquarters
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="branch-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="branch-manager">
+
+                        <div class="manager-avatar">
+                            MA
+                        </div>
+
+                        <div>
+
+                            <span>BRANCH MANAGER</span>
+
+                            <strong>Musa Ahmed</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-details">
+
+                        <div>
+
+                            <span>📍 LOCATION</span>
+
+                            <strong>Kaduna State</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>👥 WORKFORCE</span>
+
+                            <strong>86 Staff</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-performance">
+
+                        <div class="performance-header">
+
+                            <span>MONTHLY PERFORMANCE</span>
+
+                            <strong>92%</strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 92%;"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-card-footer">
+
+                        <span>
+                            12 Active Operations
+                        </span>
+
+                        <button class="view-branch-button">
+                            View Branch →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ABUJA -->
+
+                <article class="branch-card"
+                         data-branch="Abuja Branch">
+
+                    <div class="branch-card-header">
+
+                        <div class="branch-location">
+
+                            <div class="branch-icon">
+                                🏢
+                            </div>
+
+                            <div>
+
+                                <span>BRANCH</span>
+
+                                <h3>
+                                    Abuja Branch
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="branch-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="branch-manager">
+
+                        <div class="manager-avatar blue-avatar">
+                            AO
+                        </div>
+
+                        <div>
+
+                            <span>BRANCH MANAGER</span>
+
+                            <strong>Abubakar Okoro</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-details">
+
+                        <div>
+
+                            <span>📍 LOCATION</span>
+
+                            <strong>FCT, Abuja</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>👥 WORKFORCE</span>
+
+                            <strong>54 Staff</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-performance">
+
+                        <div class="performance-header">
+
+                            <span>MONTHLY PERFORMANCE</span>
+
+                            <strong>87%</strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 87%;"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-card-footer">
+
+                        <span>
+                            7 Active Operations
+                        </span>
+
+                        <button class="view-branch-button">
+                            View Branch →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- KANO -->
+
+                <article class="branch-card"
+                         data-branch="Kano Branch">
+
+                    <div class="branch-card-header">
+
+                        <div class="branch-location">
+
+                            <div class="branch-icon">
+                                🏢
+                            </div>
+
+                            <div>
+
+                                <span>BRANCH</span>
+
+                                <h3>
+                                    Kano Branch
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="branch-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="branch-manager">
+
+                        <div class="manager-avatar purple-avatar">
+                            IU
+                        </div>
+
+                        <div>
+
+                            <span>BRANCH MANAGER</span>
+
+                            <strong>Ibrahim Usman</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-details">
+
+                        <div>
+
+                            <span>📍 LOCATION</span>
+
+                            <strong>Kano State</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>👥 WORKFORCE</span>
+
+                            <strong>48 Staff</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-performance">
+
+                        <div class="performance-header">
+
+                            <span>MONTHLY PERFORMANCE</span>
+
+                            <strong>76%</strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill warning"
+                                 style="width: 76%;"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-card-footer">
+
+                        <span>
+                            4 Active Operations
+                        </span>
+
+                        <button class="view-branch-button">
+                            View Branch →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- JOS -->
+
+                <article class="branch-card"
+                         data-branch="Jos Branch">
+
+                    <div class="branch-card-header">
+
+                        <div class="branch-location">
+
+                            <div class="branch-icon">
+                                🏢
+                            </div>
+
+                            <div>
+
+                                <span>BRANCH</span>
+
+                                <h3>
+                                    Jos Branch
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="branch-status active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="branch-manager">
+
+                        <div class="manager-avatar orange-avatar">
+                            SH
+                        </div>
+
+                        <div>
+
+                            <span>BRANCH MANAGER</span>
+
+                            <strong>Sani Haruna</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-details">
+
+                        <div>
+
+                            <span>📍 LOCATION</span>
+
+                            <strong>Plateau State</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>👥 WORKFORCE</span>
+
+                            <strong>36 Staff</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-performance">
+
+                        <div class="performance-header">
+
+                            <span>MONTHLY PERFORMANCE</span>
+
+                            <strong>81%</strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 style="width: 81%;"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-card-footer">
+
+                        <span>
+                            3 Active Operations
+                        </span>
+
+                        <button class="view-branch-button">
+                            View Branch →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- LAGOS -->
+
+                <article class="branch-card"
+                         data-branch="Lagos Branch">
+
+                    <div class="branch-card-header">
+
+                        <div class="branch-location">
+
+                            <div class="branch-icon">
+                                🏢
+                            </div>
+
+                            <div>
+
+                                <span>BRANCH</span>
+
+                                <h3>
+                                    Lagos Branch
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="branch-status attention">
+                            Attention
+                        </span>
+
+                    </div>
+
+
+                    <div class="branch-manager">
+
+                        <div class="manager-avatar red-avatar">
+                            FA
+                        </div>
+
+                        <div>
+
+                            <span>BRANCH MANAGER</span>
+
+                            <strong>Fatima Abdullahi</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-details">
+
+                        <div>
+
+                            <span>📍 LOCATION</span>
+
+                            <strong>Lagos State</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>👥 WORKFORCE</span>
+
+                            <strong>24 Staff</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-performance">
+
+                        <div class="performance-header">
+
+                            <span>MONTHLY PERFORMANCE</span>
+
+                            <strong>63%</strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill danger"
+                                 style="width: 63%;"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="branch-card-footer">
+
+                        <span>
+                            2 Active Operations
+                        </span>
+
+                        <button class="view-branch-button">
+                            View Branch →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/branches.js"></script>
+
+</body>
+
+</html>
