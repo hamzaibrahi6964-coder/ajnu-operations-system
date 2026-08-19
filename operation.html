@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Operations | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.PNG"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item active">
+
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>OPERATIONS MANAGEMENT</span>
+
+                    <h1>Operations</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>CURRENT BRANCH</small>
+
+                        <strong>Kaduna Headquarters</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">▾</span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        OPERATIONS CENTER
+                    </span>
+
+                    <h2>
+                        Manage Operations
+                    </h2>
+
+                    <p>
+                        Track, assign and monitor environmental service operations.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="newOperationButton">
+
+                    <span>+</span>
+
+                    New Operation
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= SUMMARY ================= -->
+
+            <section class="stats-grid operation-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        ◉
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ACTIVE</span>
+
+                        <strong>24</strong>
+
+                        <small class="positive">
+                            Currently in progress
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>SCHEDULED</span>
+
+                        <strong>8</strong>
+
+                        <small>
+                            Upcoming operations
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>COMPLETED TODAY</span>
+
+                        <strong>16</strong>
+
+                        <small class="positive">
+                            ↑ 4 from yesterday
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        !
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>NEEDS ATTENTION</span>
+
+                        <strong>3</strong>
+
+                        <small>
+                            Review required
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= OPERATIONS TABLE ================= -->
+
+            <section class="dashboard-card operations-table-card">
+
+
+                <div class="operations-toolbar">
+
+
+                    <div>
+
+                        <span class="card-label">
+                            ALL OPERATIONS
+                        </span>
+
+                        <h3>
+                            Operations Register
+                        </h3>
+
+                    </div>
+
+
+                    <div class="operations-controls">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input type="text"
+                                   id="operationSearch"
+                                   placeholder="Search operations...">
+
+                        </div>
+
+
+                        <select id="statusFilter">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="scheduled">
+                                Scheduled
+                            </option>
+
+                            <option value="completed">
+                                Completed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="table-wrapper">
+
+                    <table class="operations-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>OPERATION</th>
+
+                                <th>LOCATION</th>
+
+                                <th>TEAM</th>
+
+                                <th>FLEET</th>
+
+                                <th>PROGRESS</th>
+
+                                <th>STATUS</th>
+
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="operationsTableBody">
+
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="operation-name">
+
+                                        <div class="operation-type-icon green">
+                                            ◉
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Kaduna Central Waste Collection
+                                            </strong>
+
+                                            <span>
+                                                OP-2026-001
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Kaduna Central
+                                </td>
+
+                                <td>
+                                    Team A
+                                </td>
+
+                                <td>
+                                    3 Vehicles
+                                </td>
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            78%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 78%;"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="operation-name">
+
+                                        <div class="operation-type-icon green">
+                                            ◉
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                State Secretariat Cleaning
+                                            </strong>
+
+                                            <span>
+                                                OP-2026-002
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Independence Way
+                                </td>
+
+                                <td>
+                                    Team C
+                                </td>
+
+                                <td>
+                                    2 Vehicles
+                                </td>
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            54%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 54%;"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <tr data-status="scheduled">
+
+                                <td>
+
+                                    <div class="operation-name">
+
+                                        <div class="operation-type-icon orange">
+                                            ◷
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Drainage Maintenance Project
+                                            </strong>
+
+                                            <span>
+                                                OP-2026-003
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Unguwan Rimi
+                                </td>
+
+                                <td>
+                                    Team B
+                                </td>
+
+                                <td>
+                                    2 Vehicles
+                                </td>
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            20%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill warning"
+                                                 style="width: 20%;"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge scheduled">
+                                        Scheduled
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <tr data-status="completed">
+
+                                <td>
+
+                                    <div class="operation-name">
+
+                                        <div class="operation-type-icon blue">
+                                            ✓
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Sabon Tasha Refuse Evacuation
+                                            </strong>
+
+                                            <span>
+                                                OP-2026-004
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Sabon Tasha
+                                </td>
+
+                                <td>
+                                    Team D
+                                </td>
+
+                                <td>
+                                    4 Vehicles
+                                </td>
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            100%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 100%;"></div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="status-badge completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/operations.js"></script>
+
+</body>
+
+</html>
