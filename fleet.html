@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fleet | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/fleet.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item">
+
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="branches.html"
+               class="nav-item">
+
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="contracts.html"
+               class="nav-item">
+
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="fleet.html"
+               class="nav-item active">
+
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>FLEET MANAGEMENT</span>
+
+                    <h1>Fleet</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">▾</span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        COMPANY VEHICLE CONTROL
+                    </span>
+
+                    <h2>
+                        Fleet Management
+                    </h2>
+
+                    <p>
+                        Monitor vehicles, assignments, drivers, maintenance and availability across all AJNU branches.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="addVehicleButton">
+
+                    <span>+</span>
+
+                    Add Vehicle
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid fleet-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        🚛
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL VEHICLES</span>
+
+                        <strong>42</strong>
+
+                        <small>
+                            Across all branches
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>AVAILABLE</span>
+
+                        <strong>29</strong>
+
+                        <small>
+                            Ready for assignment
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◉
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ON OPERATION</span>
+
+                        <strong>9</strong>
+
+                        <small>
+                            Currently assigned
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ⚠
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>MAINTENANCE ALERTS</span>
+
+                        <strong>4</strong>
+
+                        <small>
+                            Require attention
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= FLEET CONTENT ================= -->
+
+            <section class="fleet-card">
+
+
+                <!-- TOOLBAR -->
+
+                <div class="fleet-toolbar">
+
+                    <div>
+
+                        <span class="card-label">
+                            COMPANY FLEET
+                        </span>
+
+                        <h3>
+                            Vehicle Register
+                        </h3>
+
+                    </div>
+
+
+                    <div class="fleet-controls">
+
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input type="text"
+                                   id="vehicleSearch"
+                                   placeholder="Search vehicle...">
+
+                        </div>
+
+
+                        <select id="vehicleStatusFilter">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="available">
+                                Available
+                            </option>
+
+                            <option value="operation">
+                                On Operation
+                            </option>
+
+                            <option value="maintenance">
+                                Maintenance
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- VEHICLES -->
+
+                <div class="fleet-table-wrapper">
+
+                    <table class="fleet-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>VEHICLE</th>
+
+                                <th>REGISTRATION</th>
+
+                                <th>BRANCH</th>
+
+                                <th>DRIVER</th>
+
+                                <th>CURRENT STATUS</th>
+
+                                <th>ASSIGNMENT</th>
+
+                                <th>MAINTENANCE</th>
+
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="fleetTableBody">
+
+
+                            <!-- VEHICLE 1 -->
+
+                            <tr data-status="available">
+
+                                <td>
+
+                                    <div class="vehicle-name">
+
+                                        <div class="vehicle-icon">
+                                            🚛
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                MAN TGS Truck
+                                            </strong>
+
+                                            <span>
+                                                Heavy Duty
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="vehicle-reg">
+                                        KAD 428 XA
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Kaduna HQ
+                                </td>
+
+
+                                <td>
+                                    Ibrahim Musa
+                                </td>
+
+
+                                <td>
+
+                                    <span class="vehicle-status available">
+
+                                        <span></span>
+
+                                        Available
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assignment-text">
+                                        Not Assigned
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="maintenance good">
+
+                                        ✓ Up to Date
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-vehicle-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- VEHICLE 2 -->
+
+                            <tr data-status="operation">
+
+                                <td>
+
+                                    <div class="vehicle-name">
+
+                                        <div class="vehicle-icon">
+                                            🚚
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Toyota Hilux
+                                            </strong>
+
+                                            <span>
+                                                Utility Vehicle
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="vehicle-reg">
+                                        ABJ 982 KU
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Abuja Branch
+                                </td>
+
+
+                                <td>
+                                    Yusuf Abdullahi
+                                </td>
+
+
+                                <td>
+
+                                    <span class="vehicle-status operation">
+
+                                        <span></span>
+
+                                        On Operation
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assignment-text active">
+
+                                        Abuja Road Project
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="maintenance good">
+
+                                        ✓ Up to Date
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-vehicle-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- VEHICLE 3 -->
+
+                            <tr data-status="maintenance">
+
+                                <td>
+
+                                    <div class="vehicle-name">
+
+                                        <div class="vehicle-icon">
+                                            🚜
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Caterpillar Loader
+                                            </strong>
+
+                                            <span>
+                                                Heavy Equipment
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="vehicle-reg">
+                                        KN 214 LS
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Kano Branch
+                                </td>
+
+
+                                <td>
+                                    Bashir Umar
+                                </td>
+
+
+                                <td>
+
+                                    <span class="vehicle-status maintenance">
+
+                                        <span></span>
+
+                                        Maintenance
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assignment-text">
+                                        Not Assigned
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="maintenance warning">
+
+                                        ⚠ Service Required
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-vehicle-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- VEHICLE 4 -->
+
+                            <tr data-status="available">
+
+                                <td>
+
+                                    <div class="vehicle-name">
+
+                                        <div class="vehicle-icon">
+                                            🚙
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Toyota Land Cruiser
+                                            </strong>
+
+                                            <span>
+                                                Executive Vehicle
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="vehicle-reg">
+                                        JOS 773 AA
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Jos Branch
+                                </td>
+
+
+                                <td>
+                                    Sani Haruna
+                                </td>
+
+
+                                <td>
+
+                                    <span class="vehicle-status available">
+
+                                        <span></span>
+
+                                        Available
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assignment-text">
+                                        Not Assigned
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="maintenance good">
+
+                                        ✓ Up to Date
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-vehicle-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- VEHICLE 5 -->
+
+                            <tr data-status="operation">
+
+                                <td>
+
+                                    <div class="vehicle-name">
+
+                                        <div class="vehicle-icon">
+                                            🚚
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Volvo FM Truck
+                                            </strong>
+
+                                            <span>
+                                                Heavy Duty
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="vehicle-reg">
+                                        KAD 918 BX
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+                                    Kaduna HQ
+                                </td>
+
+
+                                <td>
+                                    Usman Bello
+                                </td>
+
+
+                                <td>
+
+                                    <span class="vehicle-status operation">
+
+                                        <span></span>
+
+                                        On Operation
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="assignment-text active">
+
+                                        Infrastructure Project
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="maintenance warning">
+
+                                        ⚠ Due in 12 Days
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-vehicle-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/fleet.js"></script>
+
+</body>
+
+</html>
