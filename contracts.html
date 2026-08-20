@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contracts | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/contracts.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item">
+
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="branches.html"
+               class="nav-item">
+
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="contracts.html"
+               class="nav-item active">
+
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="#"
+               class="nav-item">
+
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>CONTRACT MANAGEMENT</span>
+
+                    <h1>Contracts</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">▾</span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        CENTRAL CONTRACT REGISTER
+                    </span>
+
+                    <h2>
+                        Contracts Overview
+                    </h2>
+
+                    <p>
+                        Track contract performance, payments, deadlines and progress across all company branches.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="newContractButton">
+
+                    <span>+</span>
+
+                    New Contract
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid contracts-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        📄
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ACTIVE CONTRACTS</span>
+
+                        <strong>18</strong>
+
+                        <small>
+                            Across all branches
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ₦
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL CONTRACT VALUE</span>
+
+                        <strong>₦842M</strong>
+
+                        <small>
+                            Active contract portfolio
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ⏳
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>PAYMENTS PENDING</span>
+
+                        <strong>₦126M</strong>
+
+                        <small>
+                            Awaiting client payment
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        !
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>DEADLINE ALERTS</span>
+
+                        <strong>3</strong>
+
+                        <small>
+                            Contracts requiring attention
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= CONTRACT TABLE ================= -->
+
+            <section class="contracts-card">
+
+
+                <div class="contracts-toolbar">
+
+                    <div>
+
+                        <span class="card-label">
+                            COMPANY CONTRACTS
+                        </span>
+
+                        <h3>
+                            Contract Register
+                        </h3>
+
+                    </div>
+
+
+                    <div class="contracts-controls">
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input type="text"
+                                   id="contractSearch"
+                                   placeholder="Search contracts...">
+
+                        </div>
+
+
+                        <select id="contractStatusFilter">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="pending">
+                                Payment Pending
+                            </option>
+
+                            <option value="completed">
+                                Completed
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="table-wrapper">
+
+                    <table class="contracts-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    CONTRACT
+                                </th>
+
+                                <th>
+                                    CLIENT / AGENCY
+                                </th>
+
+                                <th>
+                                    BRANCH
+                                </th>
+
+                                <th>
+                                    VALUE
+                                </th>
+
+                                <th>
+                                    PROGRESS
+                                </th>
+
+                                <th>
+                                    PAYMENT
+                                </th>
+
+                                <th>
+                                    DEADLINE
+                                </th>
+
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="contractsTableBody">
+
+
+                            <!-- CONTRACT 1 -->
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="contract-name">
+
+                                        <div class="contract-icon green">
+                                            📄
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Kaduna Infrastructure Project
+                                            </strong>
+
+                                            <span>
+                                                AJNU-CON-001
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Kaduna State Government
+                                </td>
+
+
+                                <td>
+                                    Kaduna HQ
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="contract-value">
+                                        ₦185,000,000
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            72%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 72%;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="payment-badge paid">
+                                        60% Paid
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="deadline">
+                                        18 Sep 2026
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-contract-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- CONTRACT 2 -->
+
+                            <tr data-status="pending">
+
+                                <td>
+
+                                    <div class="contract-name">
+
+                                        <div class="contract-icon orange">
+                                            📄
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Abuja Road Maintenance
+                                            </strong>
+
+                                            <span>
+                                                AJNU-CON-002
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Federal Capital Territory
+                                </td>
+
+
+                                <td>
+                                    Abuja Branch
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="contract-value">
+                                        ₦142,500,000
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            48%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill warning"
+                                                 style="width: 48%;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="payment-badge pending">
+                                        ₦42M Pending
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="deadline warning-text">
+                                        02 Sep 2026
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-contract-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- CONTRACT 3 -->
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="contract-name">
+
+                                        <div class="contract-icon blue">
+                                            📄
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Kano Public Works Project
+                                            </strong>
+
+                                            <span>
+                                                AJNU-CON-003
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Kano State Government
+                                </td>
+
+
+                                <td>
+                                    Kano Branch
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="contract-value">
+                                        ₦96,000,000
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            84%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 84%;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="payment-badge paid">
+                                        80% Paid
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="deadline">
+                                        28 Oct 2026
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-contract-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- CONTRACT 4 -->
+
+                            <tr data-status="completed">
+
+                                <td>
+
+                                    <div class="contract-name">
+
+                                        <div class="contract-icon purple">
+                                            📄
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Jos Facility Development
+                                            </strong>
+
+                                            <span>
+                                                AJNU-CON-004
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    Plateau State Government
+                                </td>
+
+
+                                <td>
+                                    Jos Branch
+                                </td>
+
+
+                                <td>
+
+                                    <strong class="contract-value">
+                                        ₦74,500,000
+                                    </strong>
+
+                                </td>
+
+
+                                <td>
+
+                                    <div class="table-progress">
+
+                                        <strong>
+                                            100%
+                                        </strong>
+
+                                        <div class="progress-bar">
+
+                                            <div class="progress-fill"
+                                                 style="width: 100%;">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="payment-badge paid">
+                                        Fully Paid
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="deadline">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-contract-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/contracts.js"></script>
+
+</body>
+
+</html>
