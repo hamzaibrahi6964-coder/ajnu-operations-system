@@ -1,1 +1,429 @@
+/* =========================================================
+   AJNU OPERATIONS MANAGEMENT SYSTEM
+   CONTRACTS PAGE
+========================================================= */
 
+
+/* =========================================================
+   CONTRACTS STATS
+========================================================= */
+
+.contracts-stats {
+    margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   CONTRACTS CARD
+========================================================= */
+
+.contracts-card {
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.contracts-toolbar {
+    padding: 24px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom:
+        1px solid #edf1ef;
+}
+
+
+.contracts-toolbar h3 {
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #1f2d26;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.contracts-controls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.contracts-controls .search-box {
+    width: 250px;
+}
+
+
+#contractStatusFilter {
+    height: 42px;
+
+    padding: 0 35px 0 13px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e2e8e4;
+
+    background: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #344139;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+#contractStatusFilter:focus {
+    border-color: #1f6b4f;
+
+    box-shadow:
+        0 0 0 3px rgba(31, 107, 79, 0.08);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.contracts-table {
+    width: 100%;
+
+    min-width: 1250px;
+
+    border-collapse: collapse;
+}
+
+
+.contracts-table thead {
+    background: #fafcfb;
+}
+
+
+.contracts-table th {
+    padding: 14px 24px;
+
+    text-align: left;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #8a9690;
+
+    white-space: nowrap;
+}
+
+
+.contracts-table td {
+    padding: 18px 24px;
+
+    border-top:
+        1px solid #eef1ef;
+
+    font-size: 12px;
+
+    color: #536058;
+
+    vertical-align: middle;
+}
+
+
+.contracts-table tbody tr {
+    transition: 0.2s ease;
+}
+
+
+.contracts-table tbody tr:hover {
+    background: #fbfdfc;
+}
+
+
+/* =========================================================
+   CONTRACT NAME
+========================================================= */
+
+.contract-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-width: 230px;
+}
+
+
+.contract-name strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #25342b;
+}
+
+
+.contract-name span {
+    font-size: 10px;
+
+    color: #9aa49f;
+}
+
+
+/* =========================================================
+   CONTRACT ICON
+========================================================= */
+
+.contract-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    flex-shrink: 0;
+}
+
+
+.contract-icon.green {
+    background: #eaf6ef;
+
+    color: #258454;
+}
+
+
+.contract-icon.orange {
+    background: #fff3e3;
+
+    color: #d98a27;
+}
+
+
+.contract-icon.blue {
+    background: #eaf1fb;
+
+    color: #4677bd;
+}
+
+
+.contract-icon.purple {
+    background: #f0eafb;
+
+    color: #7857aa;
+}
+
+
+/* =========================================================
+   CONTRACT VALUE
+========================================================= */
+
+.contract-value {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #27372e;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PAYMENT BADGES
+========================================================= */
+
+.payment-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.payment-badge.paid {
+    color: #23764c;
+
+    background: #e7f6ed;
+}
+
+
+.payment-badge.pending {
+    color: #b5771e;
+
+    background: #fff3df;
+}
+
+
+/* =========================================================
+   DEADLINES
+========================================================= */
+
+.deadline {
+    font-size: 11px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    color: #59665f;
+}
+
+
+.warning-text {
+    color: #c77c21;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.contracts-table .table-progress {
+    min-width: 90px;
+}
+
+
+.contracts-table .table-progress strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #526057;
+}
+
+
+.contracts-table .progress-bar {
+    width: 100%;
+
+    height: 5px;
+
+    background: #edf1ef;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.contracts-table .progress-fill {
+    height: 100%;
+
+    background: #2b8a5b;
+
+    border-radius: inherit;
+}
+
+
+.contracts-table .progress-fill.warning {
+    background: #d99a3a;
+}
+
+
+/* =========================================================
+   MOBILE / RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contracts-toolbar {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .contracts-controls {
+        width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+
+    .contracts-controls .search-box {
+        flex: 1;
+
+        min-width: 220px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contracts-toolbar {
+        padding: 20px;
+    }
+
+
+    .contracts-controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .contracts-controls .search-box,
+    #contractStatusFilter {
+        width: 100%;
+    }
+
+}
