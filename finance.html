@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Finance | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/finance.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="operations.html" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+            </a>
+
+            <a href="branches.html" class="nav-item">
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+            </a>
+
+            <a href="contracts.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+            </a>
+
+            <a href="fleet.html" class="nav-item">
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+            </a>
+
+            <a href="workforce.html" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+            </a>
+
+            <a href="finance.html"
+               class="nav-item active">
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+            <button class="support-button">
+                <span>?</span>
+                Help & Support
+            </button>
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>FINANCIAL CONTROL CENTER</span>
+
+                    <h1>Finance</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">
+                        ▾
+                    </span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        COMPANY FINANCIAL OVERVIEW
+                    </span>
+
+                    <h2>
+                        Financial Management
+                    </h2>
+
+                    <p>
+                        Monitor company revenue, expenses, pending payments and financial performance across all branches.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="addTransactionButton">
+
+                    <span>+</span>
+
+                    Add Transaction
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= FINANCE STATS ================= -->
+
+            <section class="stats-grid finance-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        ₦
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL REVENUE</span>
+
+                        <strong>₦428.6M</strong>
+
+                        <small>
+                            Across all branches
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ↗
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>RECEIVED THIS MONTH</span>
+
+                        <strong>₦68.4M</strong>
+
+                        <small>
+                            +12.6% from last month
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>PENDING PAYMENTS</span>
+
+                        <strong>₦94.2M</strong>
+
+                        <small>
+                            Awaiting payment
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        ↓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL EXPENSES</span>
+
+                        <strong>₦186.8M</strong>
+
+                        <small>
+                            Operational expenses
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= FINANCIAL OVERVIEW ================= -->
+
+            <section class="finance-overview-grid">
+
+
+                <!-- COMPANY CASH POSITION -->
+
+                <article class="finance-card cash-position-card">
+
+                    <div class="finance-card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                COMPANY CASH POSITION
+                            </span>
+
+                            <h3>
+                                Financial Overview
+                            </h3>
+
+                        </div>
+
+
+                        <select id="financePeriod">
+
+                            <option value="month">
+                                This Month
+                            </option>
+
+                            <option value="quarter">
+                                This Quarter
+                            </option>
+
+                            <option value="year">
+                                This Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="cash-summary">
+
+                        <div class="cash-main">
+
+                            <span>
+                                NET COMPANY POSITION
+                            </span>
+
+                            <strong>
+                                ₦241.8M
+                            </strong>
+
+                            <small>
+                                Revenue minus recorded expenses
+                            </small>
+
+                        </div>
+
+
+                        <div class="cash-breakdown">
+
+                            <div>
+
+                                <span>
+                                    Total Revenue
+                                </span>
+
+                                <strong>
+                                    ₦428.6M
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Total Expenses
+                                </span>
+
+                                <strong class="expense-text">
+                                    ₦186.8M
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="finance-chart">
+
+                        <div class="chart-bars">
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦42M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 45%;">
+
+                                </div>
+
+                                <span>
+                                    Jan
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦51M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 60%;">
+
+                                </div>
+
+                                <span>
+                                    Feb
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦38M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 40%;">
+
+                                </div>
+
+                                <span>
+                                    Mar
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦67M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 75%;">
+
+                                </div>
+
+                                <span>
+                                    Apr
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦54M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 62%;">
+
+                                </div>
+
+                                <span>
+                                    May
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-bar-group">
+
+                                <div class="chart-value">
+                                    ₦68M
+                                </div>
+
+                                <div class="chart-bar revenue"
+                                     style="height: 82%;">
+
+                                </div>
+
+                                <span>
+                                    Jun
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- FINANCIAL ALERTS -->
+
+                <article class="finance-card finance-alert-card">
+
+                    <div class="finance-card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                FINANCIAL ATTENTION
+                            </span>
+
+                            <h3>
+                                Alerts
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="finance-alert-list">
+
+
+                        <div class="finance-alert warning">
+
+                            <div class="finance-alert-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Payment Overdue
+                                </strong>
+
+                                <p>
+                                    ₦18.5M payment is overdue.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="finance-alert info">
+
+                            <div class="finance-alert-icon">
+                                ₦
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Payment Received
+                                </strong>
+
+                                <p>
+                                    ₦12.8M received from a contract.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="finance-alert danger">
+
+                            <div class="finance-alert-icon">
+                                ↑
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Expense Increase
+                                </strong>
+
+                                <p>
+                                    Abuja expenses increased by 18%.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="view-alerts-button"
+                            id="viewFinanceAlerts">
+
+                        View Financial Alerts →
+
+                    </button>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= BRANCH FINANCIAL PERFORMANCE ================= -->
+
+            <section class="finance-card branch-finance-card">
+
+
+                <div class="finance-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            BRANCH PERFORMANCE
+                        </span>
+
+                        <h3>
+                            Financial Performance by Branch
+                        </h3>
+
+                    </div>
+
+
+                    <button class="table-action"
+                            id="viewBranchFinance">
+
+                        View Details →
+
+                    </button>
+
+                </div>
+
+
+                <div class="branch-finance-table-wrapper">
+
+                    <table class="branch-finance-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>BRANCH</th>
+                                <th>REVENUE</th>
+                                <th>EXPENSES</th>
+                                <th>NET POSITION</th>
+                                <th>PENDING</th>
+                                <th>PERFORMANCE</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Kaduna HQ
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    ₦142.8M
+                                </td>
+
+                                <td>
+                                    ₦58.2M
+                                </td>
+
+                                <td class="positive-money">
+                                    ₦84.6M
+                                </td>
+
+                                <td>
+                                    ₦21.4M
+                                </td>
+
+                                <td>
+
+                                    <span class="performance-badge excellent">
+                                        Excellent
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Abuja Branch
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    ₦108.6M
+                                </td>
+
+                                <td>
+                                    ₦46.8M
+                                </td>
+
+                                <td class="positive-money">
+                                    ₦61.8M
+                                </td>
+
+                                <td>
+                                    ₦28.7M
+                                </td>
+
+                                <td>
+
+                                    <span class="performance-badge good">
+                                        Good
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Kano Branch
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    ₦74.2M
+                                </td>
+
+                                <td>
+                                    ₦31.5M
+                                </td>
+
+                                <td class="positive-money">
+                                    ₦42.7M
+                                </td>
+
+                                <td>
+                                    ₦14.6M
+                                </td>
+
+                                <td>
+
+                                    <span class="performance-badge good">
+                                        Good
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Jos Branch
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    ₦56.4M
+                                </td>
+
+                                <td>
+                                    ₦28.9M
+                                </td>
+
+                                <td class="positive-money">
+                                    ₦27.5M
+                                </td>
+
+                                <td>
+                                    ₦11.3M
+                                </td>
+
+                                <td>
+
+                                    <span class="performance-badge average">
+                                        Monitor
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Lagos Branch
+                                    </strong>
+
+                                </td>
+
+                                <td>
+                                    ₦46.6M
+                                </td>
+
+                                <td>
+                                    ₦21.4M
+                                </td>
+
+                                <td class="positive-money">
+                                    ₦25.2M
+                                </td>
+
+                                <td>
+                                    ₦18.2M
+                                </td>
+
+                                <td>
+
+                                    <span class="performance-badge good">
+                                        Good
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= RECENT TRANSACTIONS ================= -->
+
+            <section class="finance-card transactions-card">
+
+
+                <div class="finance-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            COMPANY TRANSACTIONS
+                        </span>
+
+                        <h3>
+                            Recent Financial Activity
+                        </h3>
+
+                    </div>
+
+
+                    <button class="table-action"
+                            id="viewAllTransactions">
+
+                        View All →
+
+                    </button>
+
+                </div>
+
+
+                <div class="transaction-list">
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon income">
+                            ↓
+                        </div>
+
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Contract Payment Received
+                            </strong>
+
+                            <span>
+                                Kaduna State Infrastructure Project
+                            </span>
+
+                        </div>
+
+
+                        <div class="transaction-branch">
+                            Kaduna HQ
+                        </div>
+
+
+                        <div class="transaction-amount positive">
+                            +₦12,800,000
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon expense">
+                            ↑
+                        </div>
+
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Equipment Maintenance
+                            </strong>
+
+                            <span>
+                                Fleet maintenance expense
+                            </span>
+
+                        </div>
+
+
+                        <div class="transaction-branch">
+                            Abuja Branch
+                        </div>
+
+
+                        <div class="transaction-amount negative">
+                            -₦2,450,000
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon income">
+                            ↓
+                        </div>
+
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Project Mobilization Payment
+                            </strong>
+
+                            <span>
+                                Government contract mobilization
+                            </span>
+
+                        </div>
+
+
+                        <div class="transaction-branch">
+                            Kano Branch
+                        </div>
+
+
+                        <div class="transaction-amount positive">
+                            +₦8,600,000
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction-item">
+
+                        <div class="transaction-icon expense">
+                            ↑
+                        </div>
+
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Staff Salary Payment
+                            </strong>
+
+                            <span>
+                                Monthly payroll processing
+                            </span>
+
+                        </div>
+
+
+                        <div class="transaction-branch">
+                            All Branches
+                        </div>
+
+
+                        <div class="transaction-amount negative">
+                            -₦6,820,000
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/finance.js"></script>
+
+</body>
+
+</html>
