@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reports & Analytics | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/reports.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar"
+           id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item">
+
+                <span class="nav-icon">◉</span>
+
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="branches.html"
+               class="nav-item">
+
+                <span class="nav-icon">◫</span>
+
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="contracts.html"
+               class="nav-item">
+
+                <span class="nav-icon">▣</span>
+
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="fleet.html"
+               class="nav-item">
+
+                <span class="nav-icon">🚛</span>
+
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="workforce.html"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="finance.html"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="reports.html"
+               class="nav-item active">
+
+                <span class="nav-icon">▤</span>
+
+                <span>Reports</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>BUSINESS INTELLIGENCE</span>
+
+                    <h1>Reports & Analytics</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">
+                        ▾
+                    </span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        COMPANY INTELLIGENCE CENTER
+                    </span>
+
+                    <h2>
+                        Reports & Analytics
+                    </h2>
+
+                    <p>
+                        Generate insights and monitor company performance across branches, contracts, finance, workforce and operations.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="generateReportButton">
+
+                    <span>+</span>
+
+                    Generate Report
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= REPORT SUMMARY ================= -->
+
+            <section class="report-summary-grid">
+
+
+                <article class="report-summary-card">
+
+                    <div class="report-summary-icon">
+                        ↗
+                    </div>
+
+                    <div>
+
+                        <span>REPORTS GENERATED</span>
+
+                        <strong>248</strong>
+
+                        <small>
+                            +18 this month
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="report-summary-card">
+
+                    <div class="report-summary-icon">
+                        ◫
+                    </div>
+
+                    <div>
+
+                        <span>ACTIVE BRANCHES</span>
+
+                        <strong>5</strong>
+
+                        <small>
+                            Reporting in real-time
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="report-summary-card">
+
+                    <div class="report-summary-icon">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <span>ACTIVE CONTRACTS</span>
+
+                        <strong>24</strong>
+
+                        <small>
+                            Across all locations
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="report-summary-card">
+
+                    <div class="report-summary-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>DATA STATUS</span>
+
+                        <strong>Updated</strong>
+
+                        <small>
+                            Last update: Today
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= EXECUTIVE INSIGHTS ================= -->
+
+            <section class="analytics-grid">
+
+
+                <article class="analytics-card performance-card">
+
+                    <div class="analytics-card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                EXECUTIVE PERFORMANCE
+                            </span>
+
+                            <h3>
+                                Company Performance Overview
+                            </h3>
+
+                        </div>
+
+
+                        <select id="analyticsPeriod">
+
+                            <option value="month">
+                                This Month
+                            </option>
+
+                            <option value="quarter">
+                                This Quarter
+                            </option>
+
+                            <option value="year">
+                                This Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="performance-metrics">
+
+
+                        <div class="performance-metric">
+
+                            <span>
+                                Revenue Growth
+                            </span>
+
+                            <strong>
+                                +12.6%
+                            </strong>
+
+                            <div class="metric-bar">
+
+                                <div style="width: 78%;"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-metric">
+
+                            <span>
+                                Contract Completion
+                            </span>
+
+                            <strong>
+                                86%
+                            </strong>
+
+                            <div class="metric-bar">
+
+                                <div style="width: 86%;"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-metric">
+
+                            <span>
+                                Workforce Productivity
+                            </span>
+
+                            <strong>
+                                91%
+                            </strong>
+
+                            <div class="metric-bar">
+
+                                <div style="width: 91%;"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="performance-metric">
+
+                            <span>
+                                Fleet Availability
+                            </span>
+
+                            <strong>
+                                84%
+                            </strong>
+
+                            <div class="metric-bar">
+
+                                <div style="width: 84%;"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- EXECUTIVE INSIGHTS -->
+
+                <article class="analytics-card insights-card">
+
+                    <div class="analytics-card-header">
+
+                        <div>
+
+                            <span class="card-label">
+                                SMART INSIGHTS
+                            </span>
+
+                            <h3>
+                                Executive Insights
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="insights-list">
+
+
+                        <div class="insight-item positive">
+
+                            <div class="insight-icon">
+                                ↑
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Revenue Increasing
+                                </strong>
+
+                                <p>
+                                    Company revenue increased by 12.6% compared to the previous period.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="insight-item warning">
+
+                            <div class="insight-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Pending Contract Payment
+                                </strong>
+
+                                <p>
+                                    Some contract payments require follow-up.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="insight-item info">
+
+                            <div class="insight-icon">
+                                ◫
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Abuja Expenses Increased
+                                </strong>
+
+                                <p>
+                                    Operational expenses increased compared to last month.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= REPORT CATEGORIES ================= -->
+
+            <section class="report-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="dashboard-eyebrow">
+                            REPORT CENTER
+                        </span>
+
+                        <h3>
+                            Generate Company Reports
+                        </h3>
+
+                        <p>
+                            Select a report category to view or generate detailed company information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="report-categories-grid">
+
+
+                    <button class="report-category"
+                            data-report="financial">
+
+                        <div class="report-category-icon">
+                            ₦
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Financial Report
+                            </strong>
+
+                            <span>
+                                Revenue, expenses and payments
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+
+                    <button class="report-category"
+                            data-report="branches">
+
+                        <div class="report-category-icon">
+                            ◫
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Branch Performance
+                            </strong>
+
+                            <span>
+                                Compare all company branches
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+
+                    <button class="report-category"
+                            data-report="contracts">
+
+                        <div class="report-category-icon">
+                            ▣
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Contract Report
+                            </strong>
+
+                            <span>
+                                Project and contract progress
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+
+                    <button class="report-category"
+                            data-report="operations">
+
+                        <div class="report-category-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Operations Report
+                            </strong>
+
+                            <span>
+                                Company operational activities
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+
+                    <button class="report-category"
+                            data-report="workforce">
+
+                        <div class="report-category-icon">
+                            ♙
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Workforce Report
+                            </strong>
+
+                            <span>
+                                Staff and productivity analysis
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+
+                    <button class="report-category"
+                            data-report="fleet">
+
+                        <div class="report-category-icon">
+                            🚛
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fleet Report
+                            </strong>
+
+                            <span>
+                                Vehicle and equipment performance
+                            </span>
+
+                        </div>
+
+                        <b>→</b>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= RECENT REPORTS ================= -->
+
+            <section class="recent-reports-card">
+
+
+                <div class="analytics-card-header">
+
+                    <div>
+
+                        <span class="card-label">
+                            RECENT ACTIVITY
+                        </span>
+
+                        <h3>
+                            Recently Generated Reports
+                        </h3>
+
+                    </div>
+
+
+                    <button class="table-action"
+                            id="viewAllReports">
+
+                        View All →
+
+                    </button>
+
+                </div>
+
+
+                <div class="recent-reports-list">
+
+
+                    <div class="recent-report-item">
+
+                        <div class="recent-report-icon">
+                            ₦
+                        </div>
+
+
+                        <div class="recent-report-info">
+
+                            <strong>
+                                Monthly Financial Summary
+                            </strong>
+
+                            <span>
+                                Generated for all branches
+                            </span>
+
+                        </div>
+
+
+                        <div class="report-date">
+                            Today
+                        </div>
+
+
+                        <button class="download-report"
+                                data-report="Monthly Financial Summary">
+
+                            ↓
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="recent-report-item">
+
+                        <div class="recent-report-icon">
+                            ◫
+                        </div>
+
+
+                        <div class="recent-report-info">
+
+                            <strong>
+                                Branch Performance Report
+                            </strong>
+
+                            <span>
+                                Kaduna, Abuja, Kano, Jos and Lagos
+                            </span>
+
+                        </div>
+
+
+                        <div class="report-date">
+                            Yesterday
+                        </div>
+
+
+                        <button class="download-report"
+                                data-report="Branch Performance Report">
+
+                            ↓
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="recent-report-item">
+
+                        <div class="recent-report-icon">
+                            ▣
+                        </div>
+
+
+                        <div class="recent-report-info">
+
+                            <strong>
+                                Contract Progress Report
+                            </strong>
+
+                            <span>
+                                Active government and private contracts
+                            </span>
+
+                        </div>
+
+
+                        <div class="report-date">
+                            Aug 18
+                        </div>
+
+
+                        <button class="download-report"
+                                data-report="Contract Progress Report">
+
+                            ↓
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/reports.js"></script>
+
+</body>
+
+</html>
