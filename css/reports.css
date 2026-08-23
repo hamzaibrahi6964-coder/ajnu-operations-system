@@ -1,0 +1,767 @@
+/* =========================================================
+   AJNU OPERATIONS MANAGEMENT SYSTEM
+   REPORTS & ANALYTICS PAGE
+========================================================= */
+
+
+/* =========================================================
+   REPORT SUMMARY CARDS
+========================================================= */
+
+.report-summary-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+
+.report-summary-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 21px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+
+    transition: 0.25s ease;
+}
+
+
+.report-summary-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(19, 45, 32, 0.07);
+}
+
+
+.report-summary-icon {
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background: #edf6f1;
+
+    color: #287551;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.report-summary-card span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #909b95;
+}
+
+
+.report-summary-card strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #223229;
+
+    letter-spacing: -0.03em;
+}
+
+
+.report-summary-card small {
+    font-size: 10px;
+
+    color: #9aa49f;
+}
+
+
+/* =========================================================
+   ANALYTICS GRID
+========================================================= */
+
+.analytics-grid {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
+
+    gap: 24px;
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   GENERAL ANALYTICS CARD
+========================================================= */
+
+.analytics-card,
+.recent-reports-card {
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.analytics-card-header {
+    padding: 24px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.analytics-card-header h3 {
+    margin-top: 5px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #1f2d26;
+}
+
+
+.analytics-card-header select {
+    height: 40px;
+
+    padding: 0 32px 0 12px;
+
+    border: 1px solid #e1e8e4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #526057;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.analytics-card-header select:focus {
+    border-color: #1f6b4f;
+
+    box-shadow:
+        0 0 0 3px rgba(31, 107, 79, 0.08);
+}
+
+
+/* =========================================================
+   PERFORMANCE METRICS
+========================================================= */
+
+.performance-metrics {
+    padding: 12px 26px 26px;
+}
+
+
+.performance-metric {
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eef1ef;
+}
+
+
+.performance-metric:last-child {
+    border-bottom: none;
+}
+
+
+.performance-metric > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 11px;
+
+    color: #68756d;
+}
+
+
+.performance-metric strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #1e4935;
+}
+
+
+.metric-bar {
+    width: 100%;
+
+    height: 7px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #edf2ef;
+}
+
+
+.metric-bar div {
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #2d7c59;
+
+    transition: width 0.5s ease;
+}
+
+
+/* =========================================================
+   EXECUTIVE INSIGHTS
+========================================================= */
+
+.insights-list {
+    padding: 6px 0;
+}
+
+
+.insight-item {
+    display: flex;
+
+    gap: 14px;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #eef1ef;
+
+    transition: 0.2s ease;
+}
+
+
+.insight-item:last-child {
+    border-bottom: none;
+}
+
+
+.insight-item:hover {
+    background: #fbfdfc;
+}
+
+
+.insight-icon {
+    width: 37px;
+
+    height: 37px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.insight-item.positive .insight-icon {
+    background: #e7f6ed;
+
+    color: #267c50;
+}
+
+
+.insight-item.warning .insight-icon {
+    background: #fff2dd;
+
+    color: #b87a20;
+}
+
+
+.insight-item.info .insight-icon {
+    background: #e9f1fb;
+
+    color: #4c78b4;
+}
+
+
+.insight-item strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+
+    color: #29372f;
+}
+
+
+.insight-item p {
+    margin: 0;
+
+    font-size: 10px;
+
+    line-height: 1.55;
+
+    color: #909b95;
+}
+
+
+/* =========================================================
+   REPORT SECTION
+========================================================= */
+
+.report-section {
+    margin-bottom: 24px;
+
+    padding: 26px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+}
+
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+
+.section-heading h3 {
+    margin: 6px 0 7px;
+
+    font-size: 19px;
+
+    color: #24342b;
+}
+
+
+.section-heading p {
+    margin: 0;
+
+    max-width: 650px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #8a9690;
+}
+
+
+/* =========================================================
+   REPORT CATEGORIES
+========================================================= */
+
+.report-categories-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+.report-category {
+    width: 100%;
+
+    padding: 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    text-align: left;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.report-category:hover {
+    border-color: #bcd8c9;
+
+    background: #f9fcfa;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(26, 74, 51, 0.06);
+}
+
+
+.report-category-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #edf6f1;
+
+    color: #2d7654;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.report-category div:nth-child(2) {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.report-category strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+
+    color: #29382f;
+}
+
+
+.report-category span {
+    display: block;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+    color: #909b95;
+}
+
+
+.report-category b {
+    color: #82a18f;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+
+.report-category:hover b {
+    color: #26734f;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   RECENT REPORTS
+========================================================= */
+
+.recent-reports-card {
+    margin-bottom: 24px;
+}
+
+
+.recent-reports-list {
+    padding: 5px 0;
+}
+
+
+.recent-report-item {
+    display: grid;
+
+    grid-template-columns: 44px minmax(200px, 1fr) 90px 42px;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 18px 26px;
+
+    border-bottom: 1px solid #edf1ef;
+
+    transition: 0.2s ease;
+}
+
+
+.recent-report-item:last-child {
+    border-bottom: none;
+}
+
+
+.recent-report-item:hover {
+    background: #fbfdfc;
+}
+
+
+.recent-report-icon {
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #edf6f1;
+
+    color: #2d7654;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.recent-report-info strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+
+    color: #29372f;
+}
+
+
+.recent-report-info span {
+    font-size: 10px;
+
+    color: #929d97;
+}
+
+
+.report-date {
+    font-size: 11px;
+
+    color: #8a9690;
+}
+
+
+.download-report {
+    width: 36px;
+
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #e1e8e4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #2e7252;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.download-report:hover {
+    background: #edf6f1;
+
+    border-color: #c9ded1;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1150px) {
+
+    .report-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .report-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .report-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .report-categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .analytics-card-header {
+        padding: 20px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .performance-metrics {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+
+    .report-section {
+        padding: 20px;
+    }
+
+
+    .recent-report-item {
+        grid-template-columns: 42px 1fr 40px;
+
+        gap: 12px;
+
+        padding: 16px 20px;
+    }
+
+
+    .report-date {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .report-summary-card {
+        padding: 18px;
+    }
+
+
+    .report-summary-card strong {
+        font-size: 19px;
+    }
+
+
+    .report-category {
+        padding: 16px;
+    }
+
+
+    .report-category-icon {
+        width: 38px;
+
+        height: 38px;
+    }
+
+}
