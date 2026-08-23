@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings & Administration | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/settings.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar"
+           id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+               class="nav-item">
+
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="operations.html"
+               class="nav-item">
+
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+
+            </a>
+
+
+            <a href="branches.html"
+               class="nav-item">
+
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+
+            </a>
+
+
+            <a href="contracts.html"
+               class="nav-item">
+
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+
+            </a>
+
+
+            <a href="fleet.html"
+               class="nav-item">
+
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+
+            </a>
+
+
+            <a href="workforce.html"
+               class="nav-item">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+
+            <a href="finance.html"
+               class="nav-item">
+
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+
+            </a>
+
+
+            <a href="reports.html"
+               class="nav-item">
+
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+
+            </a>
+
+
+            <a href="settings.html"
+               class="nav-item active">
+
+                <span class="nav-icon">⚙</span>
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+
+            <button class="support-button">
+
+                <span>?</span>
+
+                Help & Support
+
+            </button>
+
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOPBAR ================= -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>SYSTEM ADMINISTRATION</span>
+
+                    <h1>Settings & Administration</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">
+                        ▾
+                    </span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        ADMINISTRATION CENTER
+                    </span>
+
+                    <h2>
+                        Company Settings
+                    </h2>
+
+                    <p>
+                        Manage company information, branches, users, permissions and system preferences.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="saveAllSettings">
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= SETTINGS NAVIGATION ================= -->
+
+            <div class="settings-layout">
+
+
+                <aside class="settings-menu">
+
+                    <button class="settings-tab active"
+                            data-tab="company">
+
+                        <span>▣</span>
+
+                        <div>
+
+                            <strong>Company Profile</strong>
+
+                            <small>Business information</small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="settings-tab"
+                            data-tab="branches">
+
+                        <span>◫</span>
+
+                        <div>
+
+                            <strong>Branch Management</strong>
+
+                            <small>Locations and branches</small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="settings-tab"
+                            data-tab="users">
+
+                        <span>♙</span>
+
+                        <div>
+
+                            <strong>Users & Roles</strong>
+
+                            <small>Access management</small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="settings-tab"
+                            data-tab="notifications">
+
+                        <span>🔔</span>
+
+                        <div>
+
+                            <strong>Notifications</strong>
+
+                            <small>Alerts and updates</small>
+
+                        </div>
+
+                    </button>
+
+
+                    <button class="settings-tab"
+                            data-tab="security">
+
+                        <span>🔒</span>
+
+                        <div>
+
+                            <strong>Security</strong>
+
+                            <small>System protection</small>
+
+                        </div>
+
+                    </button>
+
+                </aside>
+
+
+
+                <!-- ================= SETTINGS CONTENT ================= -->
+
+                <div class="settings-panels">
+
+
+                    <!-- COMPANY PROFILE -->
+
+                    <section class="settings-panel active"
+                             id="company">
+
+                        <div class="settings-card">
+
+                            <div class="settings-card-header">
+
+                                <div>
+
+                                    <span class="card-label">
+                                        COMPANY INFORMATION
+                                    </span>
+
+                                    <h3>
+                                        Company Profile
+                                    </h3>
+
+                                    <p>
+                                        Manage the primary information displayed across the system.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="company-profile-form">
+
+
+                                <div class="company-logo-preview">
+
+                                    <div class="company-logo-box">
+
+                                        <img src="ajnu.png"
+                                             alt="AJNU">
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <strong>
+                                            AJNU Ventures
+                                        </strong>
+
+                                        <span>
+                                            Company logo
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="settings-form-grid">
+
+
+                                    <div class="form-group">
+
+                                        <label>
+                                            Company Name
+                                        </label>
+
+                                        <input type="text"
+                                               value="AJNU Ventures">
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label>
+                                            Company Email
+                                        </label>
+
+                                        <input type="email"
+                                               value="info@ajnuventures.com">
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label>
+                                            Phone Number
+                                        </label>
+
+                                        <input type="text"
+                                               value="+234 800 000 0000">
+
+                                    </div>
+
+
+                                    <div class="form-group">
+
+                                        <label>
+                                            Head Office
+                                        </label>
+
+                                        <input type="text"
+                                               value="Kaduna, Nigeria">
+
+                                    </div>
+
+
+                                    <div class="form-group full-width">
+
+                                        <label>
+                                            Company Description
+                                        </label>
+
+                                        <textarea rows="4">Multi-branch operations and contract management company providing services across Nigeria.</textarea>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- BRANCH MANAGEMENT -->
+
+                    <section class="settings-panel"
+                             id="branches">
+
+                        <div class="settings-card">
+
+                            <div class="settings-card-header">
+
+                                <div>
+
+                                    <span class="card-label">
+                                        COMPANY LOCATIONS
+                                    </span>
+
+                                    <h3>
+                                        Branch Management
+                                    </h3>
+
+                                    <p>
+                                        Manage company branches and operational locations.
+                                    </p>
+
+                                </div>
+
+
+                                <button class="primary-action"
+                                        id="addBranchButton">
+
+                                    + Add Branch
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="settings-list">
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="settings-list-icon">
+                                        ◫
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Kaduna Headquarters
+                                        </strong>
+
+                                        <span>
+                                            Kaduna State · Head Office
+                                        </span>
+
+                                    </div>
+
+                                    <span class="status-badge active-status">
+                                        Active
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Edit
+                                    </button>
+
+                                </div>
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="settings-list-icon">
+                                        ◫
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Abuja Branch
+                                        </strong>
+
+                                        <span>
+                                            Federal Capital Territory
+                                        </span>
+
+                                    </div>
+
+                                    <span class="status-badge active-status">
+                                        Active
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Edit
+                                    </button>
+
+                                </div>
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="settings-list-icon">
+                                        ◫
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Kano Branch
+                                        </strong>
+
+                                        <span>
+                                            Kano State
+                                        </span>
+
+                                    </div>
+
+                                    <span class="status-badge active-status">
+                                        Active
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Edit
+                                    </button>
+
+                                </div>
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="settings-list-icon">
+                                        ◫
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Lagos Branch
+                                        </strong>
+
+                                        <span>
+                                            Lagos State
+                                        </span>
+
+                                    </div>
+
+                                    <span class="status-badge active-status">
+                                        Active
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Edit
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- USERS & ROLES -->
+
+                    <section class="settings-panel"
+                             id="users">
+
+                        <div class="settings-card">
+
+                            <div class="settings-card-header">
+
+                                <div>
+
+                                    <span class="card-label">
+                                        ACCESS MANAGEMENT
+                                    </span>
+
+                                    <h3>
+                                        Users & Roles
+                                    </h3>
+
+                                    <p>
+                                        Control who can access different areas of the system.
+                                    </p>
+
+                                </div>
+
+
+                                <button class="primary-action"
+                                        id="addUserButton">
+
+                                    + Add User
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="settings-list">
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="user-avatar">
+                                        MA
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Musa Ahmed
+                                        </strong>
+
+                                        <span>
+                                            Branch Manager · Kaduna HQ
+                                        </span>
+
+                                    </div>
+
+                                    <span class="role-badge manager-role">
+                                        Branch Manager
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Manage
+                                    </button>
+
+                                </div>
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="user-avatar">
+                                        FA
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Fatima Ali
+                                        </strong>
+
+                                        <span>
+                                            Finance Department
+                                        </span>
+
+                                    </div>
+
+                                    <span class="role-badge finance-role">
+                                        Finance
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Manage
+                                    </button>
+
+                                </div>
+
+
+                                <div class="settings-list-item">
+
+                                    <div class="user-avatar">
+                                        YA
+                                    </div>
+
+                                    <div class="settings-list-info">
+
+                                        <strong>
+                                            Yusuf Abdullahi
+                                        </strong>
+
+                                        <span>
+                                            Operations Department
+                                        </span>
+
+                                    </div>
+
+                                    <span class="role-badge operations-role">
+                                        Operations
+                                    </span>
+
+                                    <button class="edit-settings-item">
+                                        Manage
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="role-information">
+
+                                <div>
+
+                                    <span>
+                                        SYSTEM ACCESS MODEL
+                                    </span>
+
+                                    <strong>
+                                        Role-Based Access Control
+                                    </strong>
+
+                                </div>
+
+                                <p>
+                                    Users only access information and modules assigned to their role and branch.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- NOTIFICATIONS -->
+
+                    <section class="settings-panel"
+                             id="notifications">
+
+                        <div class="settings-card">
+
+                            <div class="settings-card-header">
+
+                                <div>
+
+                                    <span class="card-label">
+                                        ALERT PREFERENCES
+                                    </span>
+
+                                    <h3>
+                                        Notification Settings
+                                    </h3>
+
+                                    <p>
+                                        Control important alerts and system notifications.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="notification-settings-list">
+
+
+                                <div class="notification-setting">
+
+                                    <div>
+
+                                        <strong>
+                                            Financial Alerts
+                                        </strong>
+
+                                        <span>
+                                            Receive alerts for large expenses and payments.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox"
+                                               checked>
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="notification-setting">
+
+                                    <div>
+
+                                        <strong>
+                                            Contract Updates
+                                        </strong>
+
+                                        <span>
+                                            Get notified about contract deadlines and progress.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox"
+                                               checked>
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="notification-setting">
+
+                                    <div>
+
+                                        <strong>
+                                            Fleet Maintenance
+                                        </strong>
+
+                                        <span>
+                                            Receive alerts when vehicles require maintenance.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox"
+                                               checked>
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="notification-setting">
+
+                                    <div>
+
+                                        <strong>
+                                            Workforce Updates
+                                        </strong>
+
+                                        <span>
+                                            Receive important staff and workforce notifications.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox">
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- SECURITY -->
+
+                    <section class="settings-panel"
+                             id="security">
+
+                        <div class="settings-card">
+
+                            <div class="settings-card-header">
+
+                                <div>
+
+                                    <span class="card-label">
+                                        SYSTEM SECURITY
+                                    </span>
+
+                                    <h3>
+                                        Security & Access
+                                    </h3>
+
+                                    <p>
+                                        Monitor account access and system security settings.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="security-overview">
+
+
+                                <div class="security-status">
+
+                                    <div class="security-icon">
+                                        ✓
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            System Security Active
+                                        </strong>
+
+                                        <span>
+                                            Access controls and activity monitoring are enabled.
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <button class="secondary-button"
+                                        id="viewSecurityActivity">
+
+                                    View Activity
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="security-options">
+
+
+                                <div class="security-option">
+
+                                    <div>
+
+                                        <strong>
+                                            Two-Step Verification
+                                        </strong>
+
+                                        <span>
+                                            Require additional verification for administrators.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox"
+                                               checked>
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <div class="security-option">
+
+                                    <div>
+
+                                        <strong>
+                                            Login Activity Tracking
+                                        </strong>
+
+                                        <span>
+                                            Record important account and system activity.
+                                        </span>
+
+                                    </div>
+
+                                    <label class="toggle-switch">
+
+                                        <input type="checkbox"
+                                               checked>
+
+                                        <span></span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="security-note">
+
+                                <strong>
+                                    Executive Access
+                                </strong>
+
+                                <p>
+                                    The company owner and executive management area uses a separate protected access point from normal branch and staff accounts.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/settings.js"></script>
+
+</body>
+
+</html>
