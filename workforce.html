@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Workforce | AJNU Operations</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/variables.css">
+
+    <link rel="stylesheet"
+          href="css/reset.css">
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="css/workforce.css">
+
+</head>
+
+
+<body>
+
+<div class="app-layout">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+
+                <img src="ajnu.png"
+                     alt="AJNU Ventures">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>AJNU</strong>
+
+                <span>OPERATIONS</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⊞</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="operations.html" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>Operations</span>
+            </a>
+
+            <a href="branches.html" class="nav-item">
+                <span class="nav-icon">◫</span>
+                <span>Branches</span>
+            </a>
+
+            <a href="contracts.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Contracts</span>
+            </a>
+
+            <a href="fleet.html" class="nav-item">
+                <span class="nav-icon">🚛</span>
+                <span>Fleet</span>
+            </a>
+
+            <a href="workforce.html"
+               class="nav-item active">
+
+                <span class="nav-icon">♙</span>
+                <span>Workforce</span>
+
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">₦</span>
+                <span>Finance</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-divider"></div>
+
+            <button class="support-button">
+                <span>?</span>
+                Help & Support
+            </button>
+
+            <div class="sidebar-user">
+
+                <div class="user-avatar">
+                    MA
+                </div>
+
+                <div class="user-info">
+
+                    <strong>Musa Ahmed</strong>
+
+                    <span>Branch Manager</span>
+
+                </div>
+
+                <button class="user-more">
+                    ⋮
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="mobile-menu"
+                    id="mobileMenu">
+
+                ☰
+
+            </button>
+
+
+            <div class="topbar-left">
+
+                <div class="page-context">
+
+                    <span>WORKFORCE MANAGEMENT</span>
+
+                    <h1>Workforce</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="branch-selector">
+
+                    <span class="branch-indicator"></span>
+
+                    <div>
+
+                        <small>VIEWING</small>
+
+                        <strong>All Branches</strong>
+
+                    </div>
+
+                    <span class="branch-arrow">▾</span>
+
+                </button>
+
+
+                <button class="notification-button">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- PAGE CONTENT -->
+
+        <section class="dashboard-content">
+
+
+            <!-- HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <span class="dashboard-eyebrow">
+                        COMPANY WORKFORCE CONTROL
+                    </span>
+
+                    <h2>
+                        Workforce Management
+                    </h2>
+
+                    <p>
+                        Monitor employees, departments, branch assignments and workforce availability across the company.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-action"
+                        id="addEmployeeButton">
+
+                    <span>+</span>
+
+                    Add Employee
+
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= STATS ================= -->
+
+            <section class="stats-grid workforce-stats">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon green">
+                        👥
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>TOTAL EMPLOYEES</span>
+
+                        <strong>186</strong>
+
+                        <small>
+                            Across all branches
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ACTIVE TODAY</span>
+
+                        <strong>162</strong>
+
+                        <small>
+                            Currently available
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ON ASSIGNMENT</span>
+
+                        <strong>18</strong>
+
+                        <small>
+                            Assigned to operations
+                        </small>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-icon purple">
+                        !
+                    </div>
+
+                    <div class="stat-content">
+
+                        <span>ATTENTION REQUIRED</span>
+
+                        <strong>6</strong>
+
+                        <small>
+                            Staff records require review
+                        </small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- ================= WORKFORCE REGISTER ================= -->
+
+            <section class="workforce-card">
+
+
+                <div class="workforce-toolbar">
+
+                    <div>
+
+                        <span class="card-label">
+                            EMPLOYEE DIRECTORY
+                        </span>
+
+                        <h3>
+                            Workforce Register
+                        </h3>
+
+                    </div>
+
+
+                    <div class="workforce-controls">
+
+
+                        <div class="search-box">
+
+                            <span>⌕</span>
+
+                            <input type="text"
+                                   id="employeeSearch"
+                                   placeholder="Search employee...">
+
+                        </div>
+
+
+                        <select id="employeeStatusFilter">
+
+                            <option value="all">
+                                All Status
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="assignment">
+                                On Assignment
+                            </option>
+
+                            <option value="leave">
+                                On Leave
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="workforce-table-wrapper">
+
+                    <table class="workforce-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>EMPLOYEE</th>
+                                <th>EMPLOYEE ID</th>
+                                <th>ROLE</th>
+                                <th>BRANCH</th>
+                                <th>DEPARTMENT</th>
+                                <th>STATUS</th>
+                                <th>CURRENT ASSIGNMENT</th>
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="workforceTableBody">
+
+
+                            <!-- EMPLOYEE 1 -->
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="employee-avatar">
+                                            IM
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Ibrahim Musa
+                                            </strong>
+
+                                            <span>
+                                                ibrahim.musa@ajnu.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    <strong class="employee-id">
+                                        AJNU-EMP-001
+                                    </strong>
+                                </td>
+
+
+                                <td>
+                                    Operations Supervisor
+                                </td>
+
+
+                                <td>
+                                    Kaduna HQ
+                                </td>
+
+
+                                <td>
+                                    Operations
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-status active">
+
+                                        <span></span>
+
+                                        Active
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-assignment">
+                                        Available
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-employee-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- EMPLOYEE 2 -->
+
+                            <tr data-status="assignment">
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="employee-avatar blue">
+                                            YA
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Yusuf Abdullahi
+                                            </strong>
+
+                                            <span>
+                                                yusuf.abdullahi@ajnu.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    <strong class="employee-id">
+                                        AJNU-EMP-002
+                                    </strong>
+                                </td>
+
+
+                                <td>
+                                    Project Engineer
+                                </td>
+
+
+                                <td>
+                                    Abuja Branch
+                                </td>
+
+
+                                <td>
+                                    Engineering
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-status assignment">
+
+                                        <span></span>
+
+                                        On Assignment
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-assignment active">
+                                        Abuja Road Project
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-employee-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- EMPLOYEE 3 -->
+
+                            <tr data-status="active">
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="employee-avatar orange">
+                                            BU
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Bashir Umar
+                                            </strong>
+
+                                            <span>
+                                                bashir.umar@ajnu.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    <strong class="employee-id">
+                                        AJNU-EMP-003
+                                    </strong>
+                                </td>
+
+
+                                <td>
+                                    Equipment Operator
+                                </td>
+
+
+                                <td>
+                                    Kano Branch
+                                </td>
+
+
+                                <td>
+                                    Logistics
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-status active">
+
+                                        <span></span>
+
+                                        Active
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-assignment">
+                                        Kano Operations
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-employee-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- EMPLOYEE 4 -->
+
+                            <tr data-status="leave">
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="employee-avatar purple">
+                                            SH
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Sani Haruna
+                                            </strong>
+
+                                            <span>
+                                                sani.haruna@ajnu.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    <strong class="employee-id">
+                                        AJNU-EMP-004
+                                    </strong>
+                                </td>
+
+
+                                <td>
+                                    Branch Accountant
+                                </td>
+
+
+                                <td>
+                                    Jos Branch
+                                </td>
+
+
+                                <td>
+                                    Finance
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-status leave">
+
+                                        <span></span>
+
+                                        On Leave
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-assignment">
+                                        Expected 28 Aug
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-employee-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+
+                            <!-- EMPLOYEE 5 -->
+
+                            <tr data-status="assignment">
+
+                                <td>
+
+                                    <div class="employee-name">
+
+                                        <div class="employee-avatar green">
+                                            UB
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Usman Bello
+                                            </strong>
+
+                                            <span>
+                                                usman.bello@ajnu.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+
+                                <td>
+                                    <strong class="employee-id">
+                                        AJNU-EMP-005
+                                    </strong>
+                                </td>
+
+
+                                <td>
+                                    Logistics Coordinator
+                                </td>
+
+
+                                <td>
+                                    Kaduna HQ
+                                </td>
+
+
+                                <td>
+                                    Logistics
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-status assignment">
+
+                                        <span></span>
+
+                                        On Assignment
+
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <span class="employee-assignment active">
+                                        Infrastructure Project
+                                    </span>
+
+                                </td>
+
+
+                                <td>
+
+                                    <button class="row-action view-employee-button">
+                                        ⋮
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/workforce.js"></script>
+
+</body>
+
+</html>
