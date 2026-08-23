@@ -1,0 +1,1022 @@
+/* =========================================================
+   AJNU OPERATIONS MANAGEMENT SYSTEM
+   SETTINGS & ADMINISTRATION
+========================================================= */
+
+
+/* =========================================================
+   SETTINGS LAYOUT
+========================================================= */
+
+.settings-layout {
+    display: grid;
+
+    grid-template-columns: 260px minmax(0, 1fr);
+
+    gap: 24px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   SETTINGS MENU
+========================================================= */
+
+.settings-menu {
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    padding: 10px;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+}
+
+
+.settings-tab {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: transparent;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.settings-tab:hover {
+    background: #f6faf8;
+}
+
+
+.settings-tab.active {
+    background: #edf6f1;
+}
+
+
+.settings-tab > span {
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #f1f4f2;
+
+    color: #617067;
+
+    font-size: 16px;
+
+    transition: 0.25s ease;
+}
+
+
+.settings-tab.active > span {
+    background: #287551;
+
+    color: #ffffff;
+}
+
+
+.settings-tab div {
+    min-width: 0;
+}
+
+
+.settings-tab strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #2a3930;
+}
+
+
+.settings-tab small {
+    display: block;
+
+    font-size: 10px;
+
+    color: #99a39e;
+}
+
+
+/* =========================================================
+   SETTINGS PANELS
+========================================================= */
+
+.settings-panels {
+    min-width: 0;
+}
+
+
+.settings-panel {
+    display: none;
+}
+
+
+.settings-panel.active {
+    display: block;
+
+    animation: settingsFade 0.3s ease;
+}
+
+
+@keyframes settingsFade {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   SETTINGS CARD
+========================================================= */
+
+.settings-card {
+    background: #ffffff;
+
+    border: 1px solid #e8ece9;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(19, 45, 32, 0.025);
+}
+
+
+.settings-card-header {
+    padding: 26px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.settings-card-header h3 {
+    margin: 6px 0 7px;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    color: #233229;
+}
+
+
+.settings-card-header p {
+    margin: 0;
+
+    max-width: 600px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #8b9690;
+}
+
+
+/* =========================================================
+   COMPANY PROFILE
+========================================================= */
+
+.company-profile-form {
+    padding: 26px;
+}
+
+
+.company-logo-preview {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 24px;
+
+    margin-bottom: 24px;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.company-logo-box {
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px;
+
+    border: 1px solid #e3eae6;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+}
+
+
+.company-logo-box img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.company-logo-preview strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+
+    color: #28372e;
+}
+
+
+.company-logo-preview span {
+    font-size: 11px;
+
+    color: #9aa39e;
+}
+
+
+/* =========================================================
+   SETTINGS FORM
+========================================================= */
+
+.settings-form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.form-group label {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #526057;
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    border: 1px solid #e0e7e3;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #2b3931;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.form-group input,
+.form-group select {
+    height: 44px;
+
+    padding: 0 13px;
+}
+
+
+.form-group textarea {
+    min-height: 110px;
+
+    padding: 13px;
+
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #287551;
+
+    box-shadow:
+        0 0 0 3px rgba(40, 117, 81, 0.08);
+}
+
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   SETTINGS LIST
+========================================================= */
+
+.settings-list {
+    padding: 6px 0;
+}
+
+
+.settings-list-item {
+    display: grid;
+
+    grid-template-columns: 46px minmax(180px, 1fr) auto auto;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 18px 26px;
+
+    border-bottom: 1px solid #edf1ef;
+
+    transition: 0.2s ease;
+}
+
+
+.settings-list-item:last-child {
+    border-bottom: none;
+}
+
+
+.settings-list-item:hover {
+    background: #fbfdfc;
+}
+
+
+.settings-list-icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #edf6f1;
+
+    color: #287551;
+
+    font-size: 17px;
+}
+
+
+.settings-list-info {
+    min-width: 0;
+}
+
+
+.settings-list-info strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+
+    color: #29382f;
+}
+
+
+.settings-list-info span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #929d97;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+.status-badge,
+.role-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.active-status {
+    background: #e7f6ed;
+
+    color: #287551;
+}
+
+
+.manager-role {
+    background: #edf2fb;
+
+    color: #4e6fa9;
+}
+
+
+.finance-role {
+    background: #fff3df;
+
+    color: #aa7628;
+}
+
+
+.operations-role {
+    background: #edf6f1;
+
+    color: #287551;
+}
+
+
+/* =========================================================
+   EDIT / MANAGE BUTTON
+========================================================= */
+
+.edit-settings-item {
+    height: 36px;
+
+    padding: 0 14px;
+
+    border: 1px solid #e1e8e4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #397457;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.edit-settings-item:hover {
+    background: #edf6f1;
+
+    border-color: #c7ddd0;
+}
+
+
+/* =========================================================
+   ROLE INFORMATION
+========================================================= */
+
+.role-information {
+    margin: 20px 26px 26px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border: 1px solid #e3eee8;
+
+    border-radius: 13px;
+
+    background: #f8fbf9;
+}
+
+
+.role-information span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #8c9791;
+}
+
+
+.role-information strong {
+    font-size: 13px;
+
+    color: #28523d;
+}
+
+
+.role-information p {
+    margin: 0;
+
+    max-width: 360px;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color: #7e8a83;
+}
+
+
+/* =========================================================
+   NOTIFICATION SETTINGS
+========================================================= */
+
+.notification-settings-list {
+    padding: 4px 0;
+}
+
+
+.notification-setting,
+.security-option {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 21px 26px;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.notification-setting:last-child,
+.security-option:last-child {
+    border-bottom: none;
+}
+
+
+.notification-setting strong,
+.security-option strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 12px;
+
+    color: #29382f;
+}
+
+
+.notification-setting span,
+.security-option span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #919c96;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TOGGLE SWITCH
+========================================================= */
+
+.toggle-switch {
+    position: relative;
+
+    width: 42px;
+
+    height: 24px;
+
+    flex-shrink: 0;
+}
+
+
+.toggle-switch input {
+    opacity: 0;
+
+    width: 0;
+
+    height: 0;
+}
+
+
+.toggle-switch span {
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 20px;
+
+    background: #dce4df;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.toggle-switch span::before {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+
+    height: 18px;
+
+    left: 3px;
+
+    top: 3px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.12);
+
+    transition: 0.25s ease;
+}
+
+
+.toggle-switch input:checked + span {
+    background: #287551;
+}
+
+
+.toggle-switch input:checked + span::before {
+    transform: translateX(18px);
+}
+
+
+/* =========================================================
+   SECURITY OVERVIEW
+========================================================= */
+
+.security-overview {
+    padding: 24px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.security-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.security-icon {
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background: #e6f6ec;
+
+    color: #287551;
+
+    font-size: 19px;
+
+    font-weight: 800;
+}
+
+
+.security-status strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+    color: #28372e;
+}
+
+
+.security-status span {
+    font-size: 10px;
+
+    color: #8d9892;
+}
+
+
+/* =========================================================
+   SECURITY OPTIONS
+========================================================= */
+
+.security-options {
+    padding: 4px 0;
+}
+
+
+/* =========================================================
+   SECURITY NOTE
+========================================================= */
+
+.security-note {
+    margin: 20px 26px 26px;
+
+    padding: 19px 20px;
+
+    border-left: 3px solid #287551;
+
+    border-radius: 0 10px 10px 0;
+
+    background: #f6faf8;
+}
+
+
+.security-note strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 12px;
+
+    color: #28523d;
+}
+
+
+.security-note p {
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+
+    color: #7d8982;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .settings-layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+
+    .role-information {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .settings-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    .settings-menu {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 5px;
+    }
+
+
+    .settings-tab {
+        padding: 12px;
+    }
+
+
+    .settings-list-item {
+        grid-template-columns: 46px 1fr auto;
+
+        gap: 13px;
+    }
+
+
+    .settings-list-item .status-badge,
+    .settings-list-item .role-badge {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .settings-card-header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .settings-card-header .primary-action {
+        width: 100%;
+    }
+
+
+    .company-profile-form {
+        padding: 20px;
+    }
+
+
+    .settings-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+
+    .settings-menu {
+        grid-template-columns: 1fr;
+    }
+
+
+    .settings-list-item {
+        padding: 16px 20px;
+    }
+
+
+    .notification-setting,
+    .security-option {
+        padding: 19px 20px;
+    }
+
+
+    .security-overview {
+        padding: 20px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .security-overview .secondary-button {
+        width: 100%;
+    }
+
+
+    .role-information,
+    .security-note {
+        margin-left: 20px;
+
+        margin-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .company-logo-preview {
+        align-items: flex-start;
+    }
+
+
+    .company-logo-box {
+        width: 55px;
+
+        height: 55px;
+    }
+
+
+    .settings-list-item {
+        grid-template-columns: 42px minmax(0, 1fr);
+    }
+
+
+    .edit-settings-item {
+        grid-column: 2;
+
+        justify-self: start;
+    }
+
+}
