@@ -456,3 +456,440 @@
     }
 
 }
+
+/* =========================================================
+   WORKFORCE MODALS
+========================================================= */
+
+.employee-modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(13, 30, 22, 0.48);
+
+    backdrop-filter: blur(5px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.25s ease;
+
+    z-index: 9999;
+}
+
+
+.employee-modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.employee-modal {
+    width: 100%;
+    max-width: 700px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 80px rgba(12, 35, 24, 0.25);
+
+    transform: translateY(18px) scale(0.98);
+
+    transition: 0.25s ease;
+}
+
+
+.employee-modal-overlay.show .employee-modal {
+    transform: translateY(0) scale(1);
+}
+
+
+.employee-modal-header {
+    padding: 25px 28px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #edf1ef;
+}
+
+
+.employee-modal-header h2 {
+    margin-top: 5px;
+
+    font-size: 22px;
+
+    color: #17231d;
+}
+
+
+.employee-modal-id {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #8a9991;
+
+    letter-spacing: 0.04em;
+}
+
+
+.employee-modal-close {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f4f6f5;
+
+    color: #647168;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.employee-modal-close:hover {
+    background: #edf2ef;
+
+    color: #1f6b4f;
+}
+
+
+.employee-modal-body,
+.add-employee-form {
+    padding: 28px;
+}
+
+
+/* =========================================================
+   PROFILE SUMMARY
+========================================================= */
+
+.employee-profile-summary {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+
+    padding: 16px;
+
+    border: 1px solid #edf1ef;
+
+    border-radius: 14px;
+
+    background: #f8faf9;
+}
+
+
+.employee-modal-avatar {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e7f4eb;
+
+    color: #24784c;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.employee-profile-summary strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 15px;
+
+    color: #24332a;
+}
+
+
+.employee-profile-summary span {
+    font-size: 11px;
+
+    color: #8d9992;
+}
+
+
+/* =========================================================
+   EMPLOYEE INFO
+========================================================= */
+
+.employee-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+}
+
+
+.employee-info-item {
+    padding: 16px;
+
+    background: #f8faf9;
+
+    border: 1px solid #edf1ef;
+
+    border-radius: 12px;
+}
+
+
+.employee-info-item span,
+.employee-assignment-section span {
+    display: block;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+
+    color: #8a9991;
+}
+
+
+.employee-info-item strong {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 13px;
+
+    color: #26352d;
+}
+
+
+/* =========================================================
+   ASSIGNMENT
+========================================================= */
+
+.employee-assignment-section {
+    margin-top: 16px;
+
+    padding: 18px;
+
+    border: 1px solid #edf1ef;
+
+    border-radius: 12px;
+
+    background: #f8faf9;
+}
+
+
+.employee-assignment-section strong {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    color: #26352d;
+}
+
+
+/* =========================================================
+   ADD EMPLOYEE FORM
+========================================================= */
+
+.employee-form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.employee-form-grid input,
+.employee-form-grid select {
+    width: 100%;
+
+    height: 44px;
+
+    padding: 0 13px;
+
+    border: 1px solid #e1e7e3;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    color: #2d3b33;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+.employee-form-grid input:focus,
+.employee-form-grid select:focus {
+    border-color: #1f6b4f;
+
+    box-shadow:
+        0 0 0 3px rgba(31, 107, 79, 0.08);
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+========================================================= */
+
+.employee-modal-actions {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #edf1ef;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+.workforce-toast {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 18px;
+
+    background: #183f2d;
+
+    color: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 40px rgba(17, 40, 29, 0.22);
+
+    transform: translateY(20px);
+
+    opacity: 0;
+
+    transition: 0.3s ease;
+
+    z-index: 10000;
+}
+
+
+.workforce-toast.show {
+    transform: translateY(0);
+
+    opacity: 1;
+}
+
+
+.workforce-toast span {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2d9a65;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.workforce-toast p {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .employee-modal {
+        max-height: 90vh;
+
+        overflow-y: auto;
+    }
+
+
+    .employee-modal-header,
+    .employee-modal-body,
+    .add-employee-form {
+        padding: 20px;
+    }
+
+
+    .employee-info-grid,
+    .employee-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .employee-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+
+    .employee-modal-actions button {
+        width: 100%;
+    }
+
+}
