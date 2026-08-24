@@ -1262,3 +1262,31 @@ body {
     }
 
 }
+
+/* =====================================================
+   MOBILE SIDEBAR
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 270px;
+        height: 100vh;
+
+        transform: translateX(-100%);
+
+        transition: transform 0.3s ease;
+
+        z-index: 1000;
+    }
+
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+}
