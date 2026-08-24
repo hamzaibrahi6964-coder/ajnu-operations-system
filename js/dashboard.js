@@ -60,41 +60,31 @@ sidebarOverlay.addEventListener(
 
 
     /* =====================================================
-       NAVIGATION ACTIVE STATE
-       ===================================================== */
+   NAVIGATION ACTIVE STATE
+   ===================================================== */
 
-    const navItems = document.querySelectorAll(".nav-item");
-
-
-    navItems.forEach((item) => {
-
-        item.addEventListener("click", (event) => {
-
-            event.preventDefault();
+const navItems =
+    document.querySelectorAll(".nav-item");
 
 
-            navItems.forEach((nav) => {
+navItems.forEach((item) => {
 
-                nav.classList.remove("active");
-
-            });
+    item.addEventListener("click", () => {
 
 
-            item.classList.add("active");
+        /* Close sidebar on mobile */
 
+        if (window.innerWidth <= 900) {
 
-            /* Close sidebar on mobile */
+            sidebar.classList.remove("show");
 
-            if (window.innerWidth <= 900) {
+            sidebarOverlay.classList.remove("show");
 
-                sidebar.classList.remove("show");
-
-            }
-
-        });
+        }
 
     });
 
+});
 
     /* =====================================================
        BRANCH SELECTOR
