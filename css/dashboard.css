@@ -1290,3 +1290,30 @@ body {
     }
 
 }
+
+/* =====================================================
+   MOBILE SIDEBAR OVERLAY
+===================================================== */
+
+.sidebar-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    z-index: 999;
+}
+
+
+.sidebar-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
