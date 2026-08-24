@@ -1317,3 +1317,138 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+/* =========================================
+   MOBILE SIDEBAR
+========================================= */
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* Dark overlay behind sidebar */
+
+.sidebar-overlay {
+    display: none;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+
+    .app-layout {
+        display: block;
+    }
+
+
+    /* Sidebar hidden off-screen */
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 280px;
+        height: 100vh;
+
+        transform: translateX(-100%);
+
+        transition: transform 0.3s ease;
+
+        z-index: 1000;
+
+        overflow-y: auto;
+    }
+
+
+    /* Sidebar opens */
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+
+    /* Main content takes full width */
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    /* Show hamburger */
+
+    .mobile-menu {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 52px;
+        height: 52px;
+
+        flex-shrink: 0;
+
+        border: 1px solid var(--border-color, #e5e7eb);
+        border-radius: 14px;
+
+        background: #ffffff;
+
+        color: #1f2937;
+
+        font-size: 26px;
+
+        cursor: pointer;
+    }
+
+
+    /* Overlay */
+
+    .sidebar-overlay {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.35);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: 0.3s ease;
+
+        z-index: 999;
+    }
+
+
+    .sidebar-overlay.show {
+        display: block;
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* Mobile topbar */
+
+    .topbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    /* Hide large branch text if necessary */
+
+    .branch-selector {
+        padding: 10px;
+    }
+
+}
