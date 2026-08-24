@@ -1452,3 +1452,15 @@ body {
     }
 
 }
+
+@media (max-width: 900px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0) !important;
+    }
+
+}
