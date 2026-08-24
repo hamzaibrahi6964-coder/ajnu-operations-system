@@ -7,46 +7,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =====================================================
-       MOBILE SIDEBAR
-    ===================================================== */
+   MOBILE SIDEBAR
+===================================================== */
 
-    const mobileMenu =
-        document.getElementById("mobileMenu");
+const mobileMenu =
+    document.getElementById("mobileMenu");
 
-    const sidebar =
-        document.getElementById("sidebar");
+const sidebar =
+    document.getElementById("sidebar");
 
 
-    if (mobileMenu && sidebar) {
+if (mobileMenu && sidebar) {
 
-        mobileMenu.addEventListener("click", function () {
+    mobileMenu.addEventListener("click", function () {
 
-            /*
-             * Direct style control.
-             * This avoids conflicts from the duplicated
-             * mobile sidebar CSS currently in dashboard.css.
-             */
+        sidebar.style.transform =
+            "translateX(0)";
 
-            const isOpen =
-                sidebar.style.transform ===
-                "translateX(0px)";
+    });
 
-            if (isOpen) {
-
-                sidebar.style.transform =
-                    "translateX(-100%)";
-
-            } else {
-
-                sidebar.style.transform =
-                    "translateX(0)";
-
-            }
-
-        });
-
-    }
-
+}
 
     /* =====================================================
        NAVIGATION
