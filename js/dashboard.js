@@ -6,23 +6,57 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    /* =====================================================
-       MOBILE SIDEBAR
-       ===================================================== */
+   /* =====================================================
+   MOBILE SIDEBAR
+   ===================================================== */
 
-    const mobileMenu = document.getElementById("mobileMenu");
-    const sidebar = document.getElementById("sidebar");
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+const sidebar =
+    document.getElementById("sidebar");
 
 
-    if (mobileMenu && sidebar) {
+/* Create mobile overlay */
 
-        mobileMenu.addEventListener("click", () => {
+const sidebarOverlay =
+    document.createElement("div");
 
-            sidebar.classList.toggle("show");
+sidebarOverlay.className =
+    "sidebar-overlay";
 
-        });
+document.body.appendChild(sidebarOverlay);
+
+
+if (mobileMenu && sidebar) {
+
+    mobileMenu.addEventListener("click", () => {
+
+        sidebar.classList.toggle("show");
+
+        sidebarOverlay.classList.toggle(
+            "show"
+        );
+
+    });
+
+}
+
+
+/* Close sidebar when overlay is clicked */
+
+sidebarOverlay.addEventListener(
+    "click",
+    () => {
+
+        sidebar.classList.remove("show");
+
+        sidebarOverlay.classList.remove(
+            "show"
+        );
 
     }
+);
 
 
     /* =====================================================
