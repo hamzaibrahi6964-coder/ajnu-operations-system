@@ -5,53 +5,27 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-
     /* =====================================================
-   MOBILE SIDEBAR
-===================================================== */
-
-const mobileMenu =
-    document.getElementById("mobileMenu");
-
-const sidebar =
-    document.getElementById("sidebar");
-
-
-if (mobileMenu && sidebar) {
-
-    mobileMenu.addEventListener("click", function () {
-
-        sidebar.style.transform =
-            "translateX(0)";
-
-    });
-
-}
-
-    /* =====================================================
-       NAVIGATION
+       MOBILE SIDEBAR
     ===================================================== */
 
-    const navItems =
-        document.querySelectorAll(".nav-item");
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
+    const sidebar =
+        document.getElementById("sidebar");
 
 
-    navItems.forEach(function (item) {
+    if (mobileMenu && sidebar) {
 
-        item.addEventListener("click", function () {
+        mobileMenu.onclick = function () {
 
-            /* Close sidebar on mobile */
+            sidebar.style.transform =
+                "translateX(0)";
 
-            if (window.innerWidth <= 900) {
+        };
 
-                sidebar.style.transform =
-                    "translateX(-100%)";
-
-            }
-
-        });
-
-    });
+    }
 
 
     /* =====================================================
@@ -64,13 +38,13 @@ if (mobileMenu && sidebar) {
 
     if (branchSelector) {
 
-        branchSelector.addEventListener("click", function () {
+        branchSelector.onclick = function () {
 
             showDemoNotification(
                 "Branch selection will be available here."
             );
 
-        });
+        };
 
     }
 
@@ -85,18 +59,16 @@ if (mobileMenu && sidebar) {
 
     if (notificationButton) {
 
-        notificationButton.addEventListener("click", function () {
+        notificationButton.onclick = function () {
 
             showDemoNotification(
                 "You have 3 new notifications."
             );
 
-
             const dot =
                 notificationButton.querySelector(
                     ".notification-dot"
                 );
-
 
             if (dot) {
 
@@ -104,13 +76,13 @@ if (mobileMenu && sidebar) {
 
             }
 
-        });
+        };
 
     }
 
 
     /* =====================================================
-       PRIMARY ACTION
+       NEW OPERATION BUTTON
     ===================================================== */
 
     const newOperationButton =
@@ -119,19 +91,19 @@ if (mobileMenu && sidebar) {
 
     if (newOperationButton) {
 
-        newOperationButton.addEventListener("click", function () {
+        newOperationButton.onclick = function () {
 
             showDemoNotification(
                 "New Operation form will open here."
             );
 
-        });
+        };
 
     }
 
 
     /* =====================================================
-       CARD ACTION BUTTONS
+       CARD ACTIONS
     ===================================================== */
 
     const cardActions =
@@ -140,13 +112,13 @@ if (mobileMenu && sidebar) {
 
     cardActions.forEach(function (button) {
 
-        button.addEventListener("click", function () {
+        button.onclick = function () {
 
             showDemoNotification(
                 "This section will open in the full system."
             );
 
-        });
+        };
 
     });
 
@@ -161,19 +133,19 @@ if (mobileMenu && sidebar) {
 
     if (supportButton) {
 
-        supportButton.addEventListener("click", function () {
+        supportButton.onclick = function () {
 
             showDemoNotification(
                 "Support center will be available here."
             );
 
-        });
+        };
 
-    });
+    }
 
 
     /* =====================================================
-       DEMO NOTIFICATION SYSTEM
+       DEMO NOTIFICATION
     ===================================================== */
 
     function showDemoNotification(message) {
@@ -213,6 +185,5 @@ if (mobileMenu && sidebar) {
         }, 3000);
 
     }
-
 
 });
